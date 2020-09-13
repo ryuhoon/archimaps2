@@ -1,79 +1,85 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>ho_on.hh's architectural maps</title>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0HtROsaZ804mcl4QbZXIsEymV6Fn3kpo&callback=initMap&libraries=&v=weekly"
-      defer
-    ></script>
-	  <!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f5e1abec3daa4d7"></script>
+	<head>
+		<title>ho_on.hh's architectural maps</title>
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+		<script
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0HtROsaZ804mcl4QbZXIsEymV6Fn3kpo&callback=initMap&libraries=&v=weekly"
+			defer
+		></script>
+		<!-- Go to www.addthis.com/dashboard to customize your tools -->
+		<script
+			type="text/javascript"
+			src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f5e1abec3daa4d7"
+		></script>
 
-    <style type="text/css">
-      /* Always set the map height explicitly to define the size of the div
+		<style type="text/css">
+			/* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
-      #map {
-        height: 100%;
-      }
+			#map {
+				height: 100%;
+			}
 
-      /* Optional: Makes the sample page fill the window. */
-      html,
-      body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-    </style>
-    <script>
-      "use strict";
+			/* Optional: Makes the sample page fill the window. */
+			html,
+			body {
+				height: 100%;
+				margin: 0;
+				padding: 0;
+			}
+		</style>
+		<script>
+			'use strict';
 
-      // This example displays a marker at the center of Australia.
-      // When the user clicks the marker, an info window opens.
-      function initMap() {
-        const Toyoito = {
-          lat: 35.466968,
-          lng: 139.621068,
-        };
-        const map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 16,
-          center: Toyoito
-        });
-        const contentString =
-			  
-          '<div id="content">' +
-          '<div id="siteNotice">' +
-          "</div>" +
-          '<h1 id="firstHeading" class="firstHeading">Yokohama Wind Tower (Toyo Ito)</h1>' +
-			  
-          '<div id="bodyContent">' +
-          '<p> Architects : Toyo ito' +
-		'<br>Year : 1986 </p>' +
-			  
-          '<p>More Detail: <a href="https://archi-ho-onhh.tistory.com/29" target="_blank">' +
-          "https://archi-ho-onhh.tistory.com/29</a></p>" +
-          "</div>" +
-          "</div>";
-		  
-		  
-        const infowindow = new google.maps.InfoWindow({
-          content: contentString
-        });
-        const marker = new google.maps.Marker({
-          position: Toyoito,
-          map,
-          title: 
-			'Yokohama Wind Tower (Toyo Ito)'
-        });
-        marker.addListener("click", () => {
-          infowindow.open(map, marker);
-        });
-		  
-		  
-      }
-    </script>
-  </head>
-  <body>
-    <div id="map"></div>
-  </body>
+			// This example displays a marker at the center of Australia.
+			// When the user clicks the marker, an info window opens.
+			function initMap() {
+				const Toyoito = {
+					lat: 35.466968,
+					lng: 139.621068,
+				};
+				const map = new google.maps.Map(document.getElementById('map'), {
+					zoom: 16,
+					center: Toyoito,
+				});
+				const contentString =
+					'<div id="content">' +
+					'<div id="siteNotice">' +
+					'</div>' +
+					'<h1 id="firstHeading" class="firstHeading">Yokohama Wind Tower (Toyo Ito)</h1>' +
+					'<div id="bodyContent">' +
+					'<p> Architects : Toyo ito' +
+					'<br>Year : 1986 </p>' +
+					'<p>More Detail: <a href="https://archi-ho-onhh.tistory.com/29" target="_blank">' +
+					'https://archi-ho-onhh.tistory.com/29</a></p>' +
+					'</div>' +
+					'</div>';
+
+				const infowindow = new google.maps.InfoWindow({
+					content: contentString,
+				});
+				const marker = new google.maps.Marker({
+					position: Toyoito,
+					map,
+					title: 'Yokohama Wind Tower (Toyo Ito)',
+				});
+				marker.addListener('click', () => {
+					infowindow.open(map, marker);
+				});
+			}
+		</script>
+	</head>
+	<body>
+		
+    
+ 
+		<nav class="p-3 container navbar navbar-expand-lg navbar-light">
+			<a class="navbar-brand" href="https://ho-onhh-architecturalmaps.netlify.app/"
+				>건축물맵 테스트</a>
+			
+			
+		</nav>
+
+		<div id="map"></div>
+	</body>
 </html>
