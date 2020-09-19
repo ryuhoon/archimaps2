@@ -1,4 +1,54 @@
-.title {
-	font-weight: bold;
-	font-size: 30px;
+.firstHeading {
+	font-size:2rem;
 }
+
+.nav-distance {
+padding:1.1% 1.7%;
+	
+}
+.navbar-brand .navbar-light{
+	
+	font-family: NanumSquareR;
+	font-size: 41px;
+	line-height: 1.68;
+	text-align: left;
+	color: #35465d;
+}
+.navbar-toggler {
+	font-size: 1rem;
+}
+.section {
+	margin-top:10px;
+	margin-bottom:10px;
+		
+}
+.title {
+	font-family: NanumSquareR;
+	font-size:28px;
+	line-height: 1.68;
+	text-align: center;
+	color: #35465d;
+}
+.subtitle {
+	
+	font-family: NanumSquareR;
+	font-size:20px;
+	line-height: 1.68;
+	text-align: center;
+	color: #35465d;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 10px;
+  }
+	.navbar-brand {
+		font-size:2rem;
+	}
+	.title {
+		font-size:2.2rem;
+	}
+	.subtitle {
+		font-size:1.8rem;
+		
+	}
