@@ -1,10 +1,6 @@
-// This example displays a marker at the center of Australia.
-// When the user clicks the marker, an info window opens.
 function initMap()
 	{
 	
-		// Create a new StyledMapType object, passing it an array of styles,
-        // and the name to be displayed on the map type control.
         var styledMapType = new google.maps.StyledMapType(
             [
   {
@@ -196,26 +192,12 @@ stylers: [
             {name: 'Styled Map'});
 
 
-							var yokohama = {
-								lat: 35.465746,
-								lng: 139.622092,
-							};
-							var windtower = {
-								lat: 35.466968,
-								lng: 139.621068,
-							};
-							var gazebo = {
-								lat: 35.473900,
-								lng: 139.620385,
-							};
-
-
 							const map =
 							new google.maps.Map(document.getElementById('map'),
 							{
-								zoom: 16,
-								
-								center: yokohama,
+								zoom: 14,
+								center:
+								{ lat: 35.465746, lng: 139.622092}
 							} );
 
 //Associate the styled map with the MapTypeId and set it to display.
@@ -223,64 +205,58 @@ stylers: [
         map.setMapTypeId('styled_map');
 							
 							
-							const contentString =
+
+	var infowindow = new google.maps.InfoWindow();
+    var marker, i;
+		
+    for (i = 0; i < ndata.length; i++) {  
+      marker = new google.maps.Marker({
+        id:i,
+        position: new google.maps.LatLng(ndata[i]['latitude'], ndata[i]['longitude']),
+        map,
+		title: (ndata[i]['name']+' / '+
+		  ndata[i]['architect'])
+      });
+		
+		const contentString =
 								
-								'<div id="content">' +
+		
+								[ '<div id="content">' +
 								'<div id="siteNotice">' +
-								'</div>' +
-								'<h1 id="firstHeading" class="firstHeading">Yokohama Wind Tower (Toyo Ito)</h1>' +
-								'<div id="bodyContent">' +
-								'<p> Architects : Toyo ito' +
-								'<br>Year : 1986 </p>' +
-								'More Detail: <a href="https://archi-ho-onhh.tistory.com/29" target="_blank">' +
-								'Click</a>' +
-								'</div>' +
-								'</div>';
-
-							const contentString2 =
+								'</div>' 
 								 
-								'<div id="content">' +
-								'<div id="siteNotice">' +
-								'</div>' +
-								'<h1 id="firstHeading" class="firstHeading">Gazebo (Riken yamamoto)</h1>' +
-								'<div id="bodyContent">' +
-								'<p> Architects : Riken yamamoto' +
-								'<br>Year : 1986 </p>' +
-								'More Detail: <a href="https://archi-ho-onhh.tistory.com/29" target="_blank">' +
+								 +'<h1 id="firstHeading" class="firstHeading">' 
+								 + ndata[i]['name'] +'</h1>'
+								 
+								 + '<div id="bodyContent">' +
+								'<p> Architects : ' + ndata[i]['architect'] + 
+								'<br>Year : ' + ndata[i]['year'] +
+								'<br>Memo : ' + ndata[i]['note'] + '</p>' +
+								 
+								'More Detail: '+ '<a href= "' + ndata[i]['sitelink'] + ' "target="_blank">'  + 
 								'Click</a>' +
 								'</div>' +
-								'</div>';
-
-							const infowindow = new google.maps.InfoWindow({
-								content: contentString,
-							});
-
-							const infowindow2 = new google.maps.InfoWindow({
-								content: contentString2,
-							});
-
-
-							const marker = new google.maps.Marker({
-								position: windtower,
-								map,
-								title: 'Yokohama Wind Tower (Toyo Ito)'
-							});
-
-							const marker2 = new google.maps.Marker({
-								position: gazebo,
-								map,
-								title: 'gazebo (Riken Yamamoto)',
-							});
-
-
-							marker.addListener('click', () => {
-								infowindow.open(map, marker);
-							});
-
-							marker2.addListener('click', () => {
-								infowindow2.open(map, marker2);
-							});
-
- 
-	}
+								'</div>'
+								 
+								] 
+	
+	
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(contentString + ndata[i]['day'] );
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+		
+      if(marker)
+      {
+        marker.addListener('click', function() {
+          map.setZoom(15);
+          map.setCenter(this.getPosition());
+        });
+        }
+    }
+		
+		
+}
 			
