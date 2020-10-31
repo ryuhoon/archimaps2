@@ -231,7 +231,7 @@ stylers: [
 								 + '<div id="bodyContent">' +
 								'<p> Architects : ' + ndata[i]['architect'] + 
 								'<br>Year : ' + ndata[i]['year'] +
-								'<br>Memo : ' + ndata[i]['note'] + '</p>' +
+								'<br>Memo : ' + ndata[i]['name'] +" by "+ ndata[i]['architect'] + '</p>' +
 								 
 								'More Detail: '+ '<a href= "' + ndata[i]['sitelink'] + ' "target="_blank">'  + 
 								'Click</a>' +
@@ -251,7 +251,7 @@ stylers: [
       if(marker)
       {
         marker.addListener('click', function() {
-          map.setZoom(15);
+          map.setZoom(14);
           map.setCenter(this.getPosition());
         });
         }
