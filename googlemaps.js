@@ -195,7 +195,8 @@ stylers: [
 							const map =
 							new google.maps.Map(document.getElementById('map'),
 							{
-								zoom: 14,
+								zoom: 12,
+								mapTypeControl: false,
 								center:
 								{ lat: 35.465746, lng: 139.622092}
 							} );
