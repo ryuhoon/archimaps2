@@ -210,7 +210,7 @@ stylers: [
         map.setMapTypeId('styled_map');
 						
 		
-function CenterControl(controlDiv, map) {
+function tokyomapControl(tokyomapcontrolDiv, map) {
   // Set CSS for the control border.
   const controlUI = document.createElement("div");
   controlUI.style.backgroundColor = "#fff";
@@ -218,10 +218,10 @@ function CenterControl(controlDiv, map) {
   controlUI.style.borderRadius = "3px";
   controlUI.style.boxShadow = "0 2px 6px rgba(0,0,0,.3)";
   controlUI.style.cursor = "pointer";
-  controlUI.style.marginBottom = "22px";
+  controlUI.style.marginBottom = "6px";
   controlUI.style.textAlign = "center";
   controlUI.title = "Click to recenter the Tokyo map";
-  controlDiv.appendChild(controlUI);
+  tokyomapcontrolDiv.appendChild(controlUI);
   // Set CSS for the control interior.
   const controlText = document.createElement("div");
   controlText.style.color = "rgb(25,25,25)";
@@ -324,15 +324,15 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
 		
 	// Create the DIV to hold the control and call the CenterControl()
   // constructor passing in this DIV.
-  const centerControlDiv = document.createElement("div");
-  CenterControl(centerControlDiv, map);
-  map.controls[google.maps.ControlPosition.TOP_RIGHT].push(centerControlDiv);
+  const tokyomapControlDiv = document.createElement("div");
+  tokyomapControl(tokyomapControlDiv, map);
+  map.controls[google.maps.ControlPosition.TOP_LEFT].push(tokyomapControlDiv);
 		
 // Create the DIV to hold the control and call the CenterControl()
   // constructor passing in this DIV.
   const yokohamamapControlDiv = document.createElement("div");
-  yokohamamapControl(centerControlDiv, map);
-  map.controls[google.maps.ControlPosition.TOP_RIGHT].push(yokohamamapControlDiv);
+  yokohamamapControl(tokyomapControlDiv, map);
+  map.controls[google.maps.ControlPosition.TOP_LEFT].push(yokohamamapControlDiv);
 
 
 
