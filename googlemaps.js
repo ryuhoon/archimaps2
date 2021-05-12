@@ -283,23 +283,21 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
       });
 		
 		const contentString =
-								
-		
-								[ '<div id="content">' +
+										
+								[ '<div id="content" >' +
 								'<div id="siteNotice">' +
 								'</div>' 
 								 
 								 +'<h1 id="firstHeading" class="firstHeading">' 
 								 + ndata[i]['name'] +'</h1>'
 								 
-								 + '<div id="bodyContent">' +
-								'<p> Architects : ' + ndata[i]['architect'] + 
-								'<br>Year : ' + ndata[i]['year'] +
-								'<br>Memo : ' + ndata[i]['name'] +" by "+ ndata[i]['architect'] + '</p>' +
+								 + '<div id="bodyContent" class="bodyContent">' +
+								'<p>Architects : ' + '<b>' + ndata[i]['architect'] + '</b>' +
+								'<br>Year : ' + '<b>' + ndata[i]['year'] + '</b>' +
+								'<br>Memo : ' + '<b>' + ndata[i]['name'] + '</b>' + " by " + '<b>' + ndata[i]['architect'] + '</b>' + '</p>' +
 								 
-								'More Detail: '+ '<a href= "' + ndata[i]['sitelink'] + ' "target="_blank">'  + 
-								'Click</a>' +
-								'</div>' +
+								'More Detail: '+ '<a href= "' + ndata[i]['sitelink'] + ' "target="_blank">'  + 'Click</a>'  +
+							  	'</div>' +
 								'</div>'
 								 
 								] 

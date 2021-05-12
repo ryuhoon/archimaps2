@@ -1,9 +1,19 @@
 /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
 #map {
-  height: 100%;
-  width: 85%;
-	margin: 0 auto;
+  height: 80%;
+  width: 70%;
+margin: 0 auto;	
+}
+/* map setmenu */
+.gm-style-iw-d {
+	font-size:0.8rem;
+	}
+.firstHeading {
+	font-size:1.6rem;
+}
+.bodyContent {
+	font-size:0.8rem;
 }
 
 /* Optional: Makes the sample page fill the window. */
@@ -14,12 +24,11 @@ body {
   padding: 0;
 }
 
-.firstHeading {
-	font-size:2rem;
+.logo {
+	padding-right:1%;
 }
-
 .nav-distance {
-padding:1.1% 6.7%;
+padding:1.1% 15.7%;
 	
 }
 .navbar-brand .navbar-light{
@@ -36,11 +45,11 @@ padding:1.1% 6.7%;
 .section {
 	margin-top:10px;
 	margin-bottom:10px;
-		
+	text-align: center;		
 }
 .title {
 	font-family: NanumSquareR;
-	font-size:28px;
+	font-size:2rem;
 	line-height: 1.68;
 	text-align: center;
 	color: #35465d;
@@ -48,7 +57,7 @@ padding:1.1% 6.7%;
 .subtitle {
 	
 	font-family: NanumSquareR;
-	font-size:20px;
+	font-size:1.2rem;
 	line-height: 1.68;
 	text-align: center;
 	color: #35465d;
@@ -59,6 +68,9 @@ padding:1.1% 6.7%;
     padding-bottom: 5px;
 
 }
+
+
+/* footer */
 .text-secondary {
 	font-size:1.2rem;
 	
@@ -67,39 +79,19 @@ padding:1.1% 6.7%;
 	font-size:0.8rem;
 	color:#212529!important;
 }
+
 @media screen and (max-width: 600px) {
   html {
     font-size: 10px;
   }
 	.navbar-brand {
-		font-size:2rem;
+		font-size:1.6rem;
 	}
 	.title {
-		font-size:2.2rem;
+		font-size:2rem;
 	}
 	.subtitle {
-		font-size:1.8rem;
+		font-size:1.2rem;
 		
 	}
 	
-.searchArea{
-  width:300px;
-  height:40px;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
-  margin-top:24px;
-}
-	
-.searchArea > form > input{
-  border:none;
-  width:250px;
-  height:40px;
-  background: rgba(0, 0, 0, 0.0);
-  color:#fff;
-  padding-left:10px;
-}
-.searchArea > form > span{
-  width:50px;
-  color:white;
-}
-
