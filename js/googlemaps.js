@@ -220,16 +220,18 @@ function tokyomapControl(tokyomapcontrolDiv, map) {
   controlUI.style.cursor = "pointer";
   controlUI.style.marginBottom = "6px";
   controlUI.style.textAlign = "center";
+  controlUI.style.width = "6rem";
+  controlUI.style.height = "2rem";
   controlUI.title = "Click to recenter the Tokyo map";
   tokyomapcontrolDiv.appendChild(controlUI);
   // Set CSS for the control interior.
   const controlText = document.createElement("div");
   controlText.style.color = "rgb(25,25,25)";
   controlText.style.fontFamily = "Roboto,Arial,sans-serif";
-  controlText.style.fontSize = "16px";
-  controlText.style.lineHeight = "38px";
-  controlText.style.paddingLeft = "5px";
-  controlText.style.paddingRight = "5px";
+  controlText.style.fontSize = "1rem";
+  controlText.style.lineHeight = "1.8rem";
+  controlText.style.paddingLeft = "0px";
+  controlText.style.paddingRight = "0px";
   controlText.innerHTML = "Tokyo";
   controlUI.appendChild(controlText);
   // Setup the click event listeners: simply set the map to Chicago.
@@ -249,14 +251,16 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
   controlUI.style.cursor = "pointer";
   controlUI.style.marginBottom = "22px";
   controlUI.style.textAlign = "center";
+  controlUI.style.width = "6rem";
+  controlUI.style.height = "2rem";	
   controlUI.title = "Click to recenter the Yokohama map";
   yokohamamapcontrolDiv.appendChild(controlUI);
   // Set CSS for the control interior.
   const controlText = document.createElement("div");
   controlText.style.color = "rgb(25,25,25)";
   controlText.style.fontFamily = "Roboto,Arial,sans-serif";
-  controlText.style.fontSize = "16px";
-  controlText.style.lineHeight = "38px";
+  controlText.style.fontSize = "1rem";
+  controlText.style.lineHeight = "1.8rem";
   controlText.style.paddingLeft = "5px";
   controlText.style.paddingRight = "5px";
   controlText.innerHTML = "Yokohama";
