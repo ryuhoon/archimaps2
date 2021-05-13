@@ -2,7 +2,7 @@
        * element that contains the map. */
 #map {
   height: 80%;
-  width: 70%;
+  width: 80%;
 margin: 0 auto;	
 }
 /* map setmenu */
@@ -28,7 +28,7 @@ body {
 	padding-right:1%;
 }
 .nav-distance {
-padding:1.1% 15.7%;
+padding:1.1% 10%;
 	
 }
 .navbar-brand .navbar-light{

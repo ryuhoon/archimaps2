@@ -261,8 +261,8 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
   controlText.style.fontFamily = "Roboto,Arial,sans-serif";
   controlText.style.fontSize = "1rem";
   controlText.style.lineHeight = "1.8rem";
-  controlText.style.paddingLeft = "5px";
-  controlText.style.paddingRight = "5px";
+  controlText.style.paddingLeft = "0px";
+  controlText.style.paddingRight = "0px";
   controlText.innerHTML = "Yokohama";
   controlUI.appendChild(controlText);
   // Setup the click event listeners: simply set the map to Chicago.
