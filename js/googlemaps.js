@@ -317,7 +317,7 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
       if(marker)
       {
         marker.addListener('click', function() {
-          map.setZoom(15);
+          map.setZoom(13);
           map.setCenter(this.getPosition());
         });
         }
