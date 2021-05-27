@@ -292,6 +292,8 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
 		const contentString =
 										
 								[ '<div id="content" >' +
+                '<div id="siteNotice">' +
+								'</div>'
                 
 								 +'<h1 id="firstHeading" class="firstHeading">' 
 								 + ndata[i]['name'] +'</h1>'

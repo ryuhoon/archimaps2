@@ -15,14 +15,7 @@ margin: 0 auto;
 .bodyContent {
 	font-size:0.8rem;
 }
-div.img-box {
-	max-height: 100px;
-	overflow: hidden;
-}
-img {
-	width: 150px;
-	margin: -20px auto 0;
-}
+
 
 
 /* Optional: Makes the sample page fill the window. */
