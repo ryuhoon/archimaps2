@@ -7,10 +7,9 @@ margin: 0 auto;
 }
 /* map setmenu */
 
-.imgcontent img {
-	width: 20px;
-	height: 10px;
-	margin: 0 5px 5px 10px;	
+div.img-box {
+	max-height: 100px;
+	overflow: hidden;
 }
 .gm-style-iw-d {
 	font-size:0.8rem;

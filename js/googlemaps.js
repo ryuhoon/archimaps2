@@ -295,8 +295,8 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
 								[ '<div id="content" >' +
                 '<div id="siteNotice">' +
 								'</div>'
-                                 
-							   + '<img src="img/mainlogo.png" >' 
+
+                 + '<div style="width:130px;float:left">'+'<img src="'+ndata[i]['img']+'"  width="130" />'        
                  + '<div class="img-box">'+'<img src="https://image.shutterstock.com/image-vector/palace-icon-outline-vector-web-260nw-1046855677.jpg">'+'</div>'
 
 								 +'<h1 id="firstHeading" class="firstHeading">' 
