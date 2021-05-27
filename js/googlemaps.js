@@ -292,8 +292,7 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
 		const contentString =
 										
 								[ '<div id="content" >' +
-                '<div class="img-box">' + '<img src="https://image.shutterstock.com/image-vector/palace-icon-outline-vector-web-260nw-1046855677.jpg">' + '</div>' +
-
+                
 								 +'<h1 id="firstHeading" class="firstHeading">' 
 								 + ndata[i]['name'] +'</h1>'
 								 <hr>
