@@ -20,6 +20,7 @@ var ndata = [
       year:1986,
 	  note: "Gazebo by Riken yamamoto",
 	  sitelink: 'https://archi-ho-onhh.tistory.com/4',
+	  img: './img/mainlogo.png' ,
 		day:"update : 2020/10/11",
   },
     {
@@ -31,6 +32,7 @@ var ndata = [
       year:2004,
 	  note: "Motomachi station by Toyo ito",
 	  sitelink: 'https://archi-ho-onhh.tistory.com/36',
+	  img: './img/mainlogo.png' ,
 		day:"update : 2020/10/11",
   }, 
 	{
@@ -42,6 +44,7 @@ var ndata = [
       year:2004,
 		note: "Rotunda by Riken yamamoto",
 	  sitelink: 'https://archi-ho-onhh.tistory.com/7',
+	  img: './img/mainlogo.png' ,
 		day:"update : 2020/10/11",
   }, 
 	{
@@ -51,8 +54,9 @@ var ndata = [
       latitude:35.455072,
 	  longitude:139.631364,
       year:1993,
-	note: "Yokahama Landmark Tower by Mitsubishi Estate and Hugh Stubbins and Associates",
+	  note: "Yokahama Landmark Tower by Mitsubishi Estate and Hugh Stubbins and Associates",
 	  sitelink: 'https://archi-ho-onhh.tistory.com/33',	
+	  img: './img/mainlogo.png' ,
 		day:"update : 2020/10/11",
   }, 
 	{
