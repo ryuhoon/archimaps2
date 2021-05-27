@@ -198,6 +198,7 @@ stylers: [
 							{
 								zoom: 12,
 								mapTypeControl: false,
+                streetViewControl:false,
 								center: 
 								{ lat: 35.465746, lng: 139.622092}
 								
@@ -319,7 +320,7 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
       if(marker)
       {
         marker.addListener('click', function() {
-          map.setZoom(15);
+          map.setZoom(13);
           map.setCenter(this.getPosition());
         });
         }
