@@ -20,8 +20,8 @@ div.img-box {
 	
  }
  .gm-style img {    
-    max-width: 10rem;
-	max-height: 14rem;
+    width: 10rem;
+	height: 14rem;
 }
 .gm-style-iw-d {
 	font-size:0.8rem;
