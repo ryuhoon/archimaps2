@@ -273,29 +273,30 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
   });
 }				
 	
-
-		
-	var infowindow = new google.maps.InfoWindow();
+	//마커 이미지
+  var customicon = 'http://drive.google.com/uc?export=view&id=1tZgPtboj4mwBYT6cZlcY36kYaQDR2bRM'	
+	//인포윈도우
+  var infowindow = new google.maps.InfoWindow();
+  //마커 생성
     var marker, i;
 		
     for (i = 0; i < ndata.length; i++) {  
       marker = new google.maps.Marker({
         id:i,
         position: new google.maps.LatLng(ndata[i]['latitude'], ndata[i]['longitude']),
+        icon: customicon,
         map,
-		title: (ndata[i]['name']+' / '+
-		  ndata[i]['architect'])
+        title: (ndata[i]['name']+' / '+ ndata[i]['architect'])
       });
 		
 		const contentString =
 										
 								[ '<div id="content" >' +
-								'<div id="siteNotice">' +
-								'</div>' 
-								 
+                '<div class="img-box">' + '<img src="https://image.shutterstock.com/image-vector/palace-icon-outline-vector-web-260nw-1046855677.jpg">' + '</div>' +
+
 								 +'<h1 id="firstHeading" class="firstHeading">' 
 								 + ndata[i]['name'] +'</h1>'
-								 
+								 <hr>
 								 + '<div id="bodyContent" class="bodyContent">' +
 								'<p>Architects : ' + '<b>' + ndata[i]['architect'] + '</b>' +
 								'<br>Year : ' + '<b>' + ndata[i]['year'] + '</b>' +
@@ -303,6 +304,7 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
 								 
 								'More Detail: '+ '<a href= "' + ndata[i]['sitelink'] + ' "target="_blank">'  + 'Click</a>'  +
 							  	'</div>' +
+
 								'</div>'
 								 
 								] 
