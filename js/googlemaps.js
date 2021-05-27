@@ -277,7 +277,7 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
 
 		
 	var infowindow = new google.maps.InfoWindow();
-    var marker, i;
+  var marker, i;
 		
     for (i = 0; i < ndata.length; i++) {  
       marker = new google.maps.Marker({
@@ -295,10 +295,10 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
 								[ '<div id="content" >' +
                 '<div id="siteNotice">' +
 								'</div>'
-								 
+								 +  '<img src="images/vistalegre.jpg" alt="Porcelain Factory of Vista Alegre" height="115" width="83">' 
 								 +'<h1 id="firstHeading" class="firstHeading">' 
-								 + ndata[i]['name'] +'</h1>'
-								 + '<hr>'
+								 + ndata[i]['name'] +'</h1>' 
+                
 								 + '<div id="bodyContent" class="bodyContent">' +
 								'<p>Architects : ' + '<b>' + ndata[i]['architect'] + '</b>' +
 								'<br>Year : ' + '<b>' + ndata[i]['year'] + '</b>' +
