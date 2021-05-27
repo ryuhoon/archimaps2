@@ -298,7 +298,7 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
 								 
 								 +'<h1 id="firstHeading" class="firstHeading">' 
 								 + ndata[i]['name'] +'</h1>'
-								 
+								 + '<hr>'
 								 + '<div id="bodyContent" class="bodyContent">' +
 								'<p>Architects : ' + '<b>' + ndata[i]['architect'] + '</b>' +
 								'<br>Year : ' + '<b>' + ndata[i]['year'] + '</b>' +
