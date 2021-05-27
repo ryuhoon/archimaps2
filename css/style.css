@@ -9,6 +9,7 @@ margin: 0 auto;
 
 div.img-box {
 	max-width: 10rem;
+	text-align: center;
 }
 .gm-style-iw {
 	width: 18rem !important;
@@ -17,7 +18,7 @@ div.img-box {
 	box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
 	border: 1px solid rgba(72, 181, 233, 0.6);
 	border-radius: 2px 2px 10px 10px;
-	text-align: center;
+	
  }
 .gm-style-iw-d {
 	font-size:0.8rem;
