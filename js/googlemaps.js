@@ -285,7 +285,7 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
         position: new google.maps.LatLng(ndata[i]['latitude'], ndata[i]['longitude']),
         
         map,
-        title: (ndata[i]['name']+' / '+ ndata[i]['architect'])
+        title: (ndata[i]['name'] +' / '+ ndata[i]['architect'])
       });
 		
 		const contentString =
@@ -296,7 +296,7 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
 
 								 +'<h1 id="firstHeading" class="firstHeading">' 
 								 + ndata[i]['name'] +'</h1>'
-								 <hr>
+								
 								 + '<div id="bodyContent" class="bodyContent">' +
 								'<p>Architects : ' + '<b>' + ndata[i]['architect'] + '</b>' +
 								'<br>Year : ' + '<b>' + ndata[i]['year'] + '</b>' +
