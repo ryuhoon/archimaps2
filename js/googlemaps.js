@@ -274,11 +274,9 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
 }				
 	
 	
-	//인포윈도우
+	
   var infowindow = new google.maps.InfoWindow();
-  //마커 생성
-    var marker, i;
-		
+  var marker, i;
     for (i = 0; i < ndata.length; i++) {  
       marker = new google.maps.Marker({
         id:i,
