@@ -298,8 +298,8 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
 
                  + '<div class="img-box">' + '<img src="'+ ndata[i]['img']+'" height="60px" />' +'</div>'
                 
-								 +'<h1 id="firstHeading" class="firstHeading">' 
-								 + ndata[i]['name'] +'</h1>' 
+								 +'<div h1 id="firstHeading" class="firstHeading">' 
+								 + ndata[i]['name'] +'</h1>' + '</div>'
                 
 								 + '<div id="bodyContent" class="bodyContent">' +
 								'<p>Architects : ' + '<b>' + ndata[i]['architect'] + '</b>' +

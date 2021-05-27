@@ -8,7 +8,7 @@ var ndata = [
       year:1986,
 	  note: "Windtower by Toyo ito",
 	  sitelink: 'https://archi-ho-onhh.tistory.com/29',
-	  img: './img/mainlogo.png',
+	  img: './img/mainlogo.png' ,
 		day:"update : 2020/10/11",
   },
 	{
