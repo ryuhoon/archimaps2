@@ -273,8 +273,7 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
   });
 }				
 	
-	//마커 이미지
-  var customicon = 'http://drive.google.com/uc?export=view&id=1tZgPtboj4mwBYT6cZlcY36kYaQDR2bRM'	
+	
 	//인포윈도우
   var infowindow = new google.maps.InfoWindow();
   //마커 생성
@@ -284,7 +283,7 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
       marker = new google.maps.Marker({
         id:i,
         position: new google.maps.LatLng(ndata[i]['latitude'], ndata[i]['longitude']),
-        icon: customicon,
+        
         map,
         title: (ndata[i]['name']+' / '+ ndata[i]['architect'])
       });
@@ -294,7 +293,7 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
 								[ '<div id="content" >' +
                 '<div id="siteNotice">' +
 								'</div>'
-                
+
 								 +'<h1 id="firstHeading" class="firstHeading">' 
 								 + ndata[i]['name'] +'</h1>'
 								 <hr>
