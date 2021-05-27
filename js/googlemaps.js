@@ -296,7 +296,7 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
                 '<div id="siteNotice">' +
 								'</div>'
 
-                 + '<div class="img-box">' + '<img src="'+ ndata[i]['img']+'"/>' +'</div>'
+                 + '<div class="img-box">' + '<img src="'+ ndata[i]['img']+'" height="4rem" />' +'</div>'
 
 								 +'<h1 id="firstHeading" class="firstHeading">' 
 								 + ndata[i]['name'] +'</h1>' 
