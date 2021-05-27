@@ -295,7 +295,11 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
 								[ '<div id="content" >' +
                 '<div id="siteNotice">' +
 								'</div>'
-								 +  '<img src="images/vistalegre.jpg" alt="Porcelain Factory of Vista Alegre" height="115" width="83">' 
+
+                 + '<div id="imgContent" class="imgContent">' +
+								 + '<img src="img/mainlogo.png" >' 
+                 + '</div>'
+                 
 								 +'<h1 id="firstHeading" class="firstHeading">' 
 								 + ndata[i]['name'] +'</h1>' 
                 
