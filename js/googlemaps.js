@@ -319,7 +319,7 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
       if(marker)
       {
         marker.addListener('click', function() {
-          map.setZoom(13);
+          map.setZoom(15);
           map.setCenter(this.getPosition());
         });
         }
