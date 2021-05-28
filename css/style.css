@@ -9,7 +9,14 @@ margin: 0 auto;
 
 div.img-box {
 	text-align: center;
+	vertical-align: middle;
 }
+.img-thumbnail {    
+    max-width: 1rem;
+	max-height: 1rem;
+	overflow: hidden;
+}
+
 .gm-style-iw {
 	width: 18rem !important;
 	left: 0 !important;
@@ -19,11 +26,7 @@ div.img-box {
 	border-radius: 2px 2px 10px 10px;
 	
  }
- .gm-style-iw-img {    
-    width: 1rem;
-	max-height: 1rem;
-	overflow: hidden;
-}
+
 .gm-style-iw-d {
 	font-size:0.8rem;
 	}
