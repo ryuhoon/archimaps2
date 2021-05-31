@@ -68,8 +68,8 @@ var ndata = [
       year:2018,
 	note: "Koyasu Elementary School by Riken Yamamoto & Field shop",
 	  sitelink: 'https://archi-ho-onhh.tistory.com/6',	
-	  img: './img/'+ i + '.jpg' ,
-		day:"update : 2020/10/30",
+	  img: './img/'+ code + '.jpg' ,
+	  day:"update : 2020/10/30",
   }, 
 	{
 		code:7,
