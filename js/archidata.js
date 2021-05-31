@@ -60,7 +60,7 @@ var ndata = [
 		day:"update : 2020/10/11",
   }, 
 	{
-		code:6,
+	  code:6,
       name:"Koyasu Elementary School",
       architect:"Riken Yamamoto & Field shop",
       latitude:35.490149,
@@ -68,7 +68,7 @@ var ndata = [
       year:2018,
 	note: "Koyasu Elementary School by Riken Yamamoto & Field shop",
 	  sitelink: 'https://archi-ho-onhh.tistory.com/6',	
-	  img: './img/'+ [name]+ '.jpg' ,
+	  img: './img/'+ i + '.jpg' ,
 		day:"update : 2020/10/30",
   }, 
 	{
