@@ -307,7 +307,7 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
 								'<br>Memo : ' + '<b>' + ndata[i]['name'] + '</b>' + " by " + '<b>' + ndata[i]['architect'] + '</b>' + '</p>' +
 								 
 								'More Detail: '+ '<a href= "' + ndata[i]['sitelink'] + ' "target="_blank">'  + 'Click</a>'  +
-                '<br>More Detail: '+ "<a href=https://maps.google.com/?q=" + ndata[i]['latitude']+ ',' + ndata[i]['longitude'] + '>'
+                '<br>See in GoogleMaps: '+ "<a href=https://maps.google.com/?q=" + ndata[i]['latitude']+ ',' + ndata[i]['longitude'] + '"target="_blank">'+ 'Click</a>'
 							  +	'</div>' 
                 + '</div>'
 								 
