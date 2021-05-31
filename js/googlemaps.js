@@ -307,7 +307,7 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
 								'<br>Memo : ' + '<b>' + ndata[i]['name'] + '</b>' + " by " + '<b>' + ndata[i]['architect'] + '</b>' + '</p>' +
 								 
 								'More Detail: '+ '<a href= "' + ndata[i]['sitelink'] + ' "target="_blank">'  + 'Click</a>'  +
-                '<br>View in Google Maps: '+ "<a target='_blank'" + "href=https://maps.google.com/?q=" + ndata[i]['latitude']+ ',' + ndata[i]['longitude'] + '>' + 'Click</a>'
+                ndata[i]['day'] 
 							  +	'</div>' 
                 + '</div>'
 								 
@@ -316,7 +316,7 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
 	
       google.maps.event.addListener(marker, 'click', (function(marker, i) {
         return function() {
-          infowindow.setContent(contentString + ndata[i]['day'] + "<a target='_blank'" + "href=https://maps.google.com/?q=" + ndata[i]['latitude']+ ',' + ndata[i]['longitude'] + '>'+ 'Click</a>');
+          infowindow.setContent(contentString + '<b>View in Google Maps: </b>' + "<a target='_blank'" + "href=https://maps.google.com/?q=" + ndata[i]['latitude']+ ',' + ndata[i]['longitude'] + '>'+ 'Click</a>');
           infowindow.open(map, marker);
         }
       })(marker, i));
