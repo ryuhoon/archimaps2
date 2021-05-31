@@ -306,8 +306,8 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
 								'<br>Year : ' + '<b>' + ndata[i]['year'] + '</b>' +
 								'<br>Memo : ' + '<b>' + ndata[i]['name'] + '</b>' + " by " + '<b>' + ndata[i]['architect'] + '</b>' + '</p>' +
 								 
-								'More Detail: '+ '<a href= "' + ndata[i]['sitelink'] + ' "target="_blank">'  + 'Click</a>'  +
-                ndata[i]['day'] 
+								'<b>More Detail: </b>'+ '<a href= "' + ndata[i]['sitelink'] + ' "target="_blank">'  + 'Click</a>'  +
+                '<br>' + ndata[i]['day'] 
 							  +	'</div>' 
                 + '</div>'
 								 
