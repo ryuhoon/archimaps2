@@ -39,8 +39,8 @@ var ndata = [
 		code:4,
       name:"Rotunda",
       architect:"Riken yamamoto",
-      latitude:35.477362,
-	  longitude:139.619935,
+      latitude:35.476722490774726, 
+	  longitude:139.61973620175877,
       year:2004,
 		note: "Rotunda by Riken yamamoto",
 	  sitelink: 'https://archi-ho-onhh.tistory.com/7',
@@ -57,7 +57,7 @@ var ndata = [
 	  note: "Yokahama Landmark Tower by Mitsubishi Estate and Hugh Stubbins and Associates",
 	  sitelink: 'https://archi-ho-onhh.tistory.com/33',	
 	  img: './img/mainlogo.png' ,
-		day:"update : 2020/10/11",
+	  day:"update : 2020/10/11",
   }, 
 	{
 	  code:6,
@@ -373,6 +373,7 @@ var ndata = [
       year:"2020",
 	  sitelink: '',	
 		day:"update : 2021/04/18",
+		type:"toliet"
   },
 	
     ];

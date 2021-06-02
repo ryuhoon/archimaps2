@@ -205,6 +205,14 @@ stylers: [
 							} );
 		const tokyomap = {lat : 35.658450658166664, lng:139.7007586504356}
 		const yokohamamap = {lat: 35.465746, lng: 139.622092}
+    //icon
+    const iconBase =
+    "https://developers.google.com/maps/documentation/javascript/examples/full/images/";
+  const icons = {
+    toilet: {
+      icon: iconBase + "library_maps.png",
+    },
+  };
 
 //Associate the styled map with the MapTypeId and set it to display.
         map.mapTypes.set('styled_map', styledMapType);
@@ -275,7 +283,7 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
 	
 
 
-		
+	//set marker
 	var infowindow = new google.maps.InfoWindow();
   var marker, i;
 		
@@ -283,7 +291,7 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
       marker = new google.maps.Marker({
         id:i,
         position: new google.maps.LatLng(ndata[i]['latitude'], ndata[i]['longitude']),
-
+        icon: icons[ndata[i].type].icon,
         map,
 		title: (ndata[i]['name']+' / '+
 		  ndata[i]['architect'])
