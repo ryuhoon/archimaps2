@@ -214,10 +214,10 @@ stylers: [
       icon: './img/icons8-marker-30.png',
     },
     type: {
-      icon: './img/icons8-marker-30.png',
+      icon: './img/google-309741_640.png',
     },
     cafe: {
-      icon: './img/icons8-marker-30.png',
+      icon: './img/google-309741_640.png',
     },
 
   };
