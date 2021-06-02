@@ -207,7 +207,8 @@ stylers: [
 		const yokohamamap = {lat: 35.465746, lng: 139.622092}
     //icon
     const iconBase =
-    "https://developers.google.com/maps/documentation/javascript/examples/full/images/";
+    './img/icons8-marker-30.png';
+
   const icons = {
     info: {
       icon: iconBase + "library_maps.png",
@@ -291,7 +292,7 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
       marker = new google.maps.Marker({
         id:i,
         position: new google.maps.LatLng(ndata[i]['latitude'], ndata[i]['longitude']),
-        icon: icons[info].icon,
+        icon: iconBase,
         map,
 		title: (ndata[i]['name']+' / '+
 		  ndata[i]['architect'])
