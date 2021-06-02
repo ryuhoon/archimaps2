@@ -373,7 +373,7 @@ var ndata = [
       year:"2020",
 	  sitelink: '',	
 		day:"update : 2021/04/18",
-		type:"toliet"
+		type:"info"
   },
 	
     ];
