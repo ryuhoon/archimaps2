@@ -10,6 +10,7 @@ var ndata = [
 	  sitelink: 'https://archi-ho-onhh.tistory.com/29',
 	  img: './img/mainlogo.png' ,
 		day:"update : 2020/10/11",
+		type:"building",
   },
 	{
 		code:2,
@@ -22,6 +23,7 @@ var ndata = [
 	  sitelink: 'https://archi-ho-onhh.tistory.com/4',
 	  img: './img/mainlogo.png' ,
 		day:"update : 2020/10/11",
+		type:"building",
   },
     {
 		code:3,
@@ -34,6 +36,7 @@ var ndata = [
 	  sitelink: 'https://archi-ho-onhh.tistory.com/36',
 	  img: './img/mainlogo.png' ,
 		day:"update : 2020/10/11",
+		type:"building",
   }, 
 	{
 		code:4,
@@ -46,6 +49,7 @@ var ndata = [
 	  sitelink: 'https://archi-ho-onhh.tistory.com/7',
 	  img: './img/mainlogo.png' ,
 		day:"update : 2020/10/11",
+		type:"building",
   }, 
 	{
 		code:5,
@@ -58,6 +62,7 @@ var ndata = [
 	  sitelink: 'https://archi-ho-onhh.tistory.com/33',	
 	  img: './img/mainlogo.png' ,
 	  day:"update : 2020/10/11",
+	  type:"building",
   }, 
 	{
 	  code:6,
@@ -70,6 +75,7 @@ var ndata = [
 	  sitelink: 'https://archi-ho-onhh.tistory.com/6',	
 	  img: './img/Koyasu Elementary School.jpg' ,
 	  day:"update : 2020/10/30",
+	  type:"building",
   }, 
 	{
 		code:7,
@@ -81,6 +87,7 @@ var ndata = [
 	  note: "OsanBashi Yokohama International Passenger Terminal by FOA (Foreign Office Architects)",
 	  sitelink: 'https://archi-ho-onhh.tistory.com/10',	
 		day:"update : 2020/10/30",
+		type:"building",
   }, 
 	{
 		code:8,
@@ -92,6 +99,7 @@ var ndata = [
 	  note: "Yokohama I-land tower by Fumihiko Maki",
 	  sitelink: 'https://archi-ho-onhh.tistory.com/30',	
 		day:"update : 2020/10/30",
+		type:"building",
   }, 
 	{
 		code:9,
@@ -103,6 +111,7 @@ var ndata = [
 	  note: "Yokohama I-land tower by Fumihiko Maki",
 	  sitelink: 'https://archi-ho-onhh.tistory.com/31',	
 		day:"update : 2020/10/30",
+		type:"building",
   }, 
 	{
 		code:10,
@@ -114,6 +123,7 @@ var ndata = [
 	  note: "Yokohama I-land tower by Fumihiko Maki",
 	  sitelink: 'https://archi-ho-onhh.tistory.com/32',	
 		day:"update : 2020/10/30",
+		type:"building",
   }, 
 	{
 		code:11,
@@ -125,6 +135,7 @@ var ndata = [
 	  note: "Yokohama I-land tower by Fumihiko Maki",
 	  sitelink: 'https://archi-ho-onhh.tistory.com/34',	
 		day:"update : 2020/10/30",
+		type:"building",
   },
 	{
 		code:12,
@@ -136,6 +147,7 @@ var ndata = [
 	  note: "Yokohama I-land tower by Fumihiko Maki",
 	  sitelink: 'https://archi-ho-onhh.tistory.com/35',	
 		day:"update : 2020/10/30",
+		type:"building",
   }, 
 	{
 		code:13,
@@ -147,6 +159,7 @@ var ndata = [
 	  note: "Yokohama I-land tower by Fumihiko Maki",
 	  sitelink: 'https://archi-ho-onhh.tistory.com/38',	
 		day:"update : 2020/10/30",
+		type:"building",
   }, 
 	{
 		code:14,
@@ -158,6 +171,7 @@ var ndata = [
 	  note: "Yokohama I-land tower by Fumihiko Maki",
 	  sitelink: 'https://archi-ho-onhh.tistory.com/39',	
 		day:"update : 2020/10/30",
+		type:"building",
   }, 
 	{
 		code:15,
@@ -169,6 +183,7 @@ var ndata = [
 	  note: "Yokohama I-land tower by Fumihiko Maki",
 	  sitelink: 'https://archi-ho-onhh.tistory.com/43',	
 		day:"update : 2020/10/30",
+		type:"building",
   }, 
 	{
 		code:16,
@@ -180,6 +195,7 @@ var ndata = [
 	  note: "Yokohama I-land tower by Fumihiko Maki",
 	  sitelink: 'https://archi-ho-onhh.tistory.com/40',	
 		day:"update : 2020/10/30",
+		type:"building",
   }, {
 		code:17,
       name:"Yokohama Hakuraku Housing",
@@ -190,6 +206,7 @@ var ndata = [
 	  note: "Yokohama I-land tower by Fumihiko Maki",
 	  sitelink: 'https://archi-ho-onhh.tistory.com/52',	
 		day:"update : 2020/10/30",
+		type:"building",
   }, 
 	{
 		code:18,
@@ -200,6 +217,7 @@ var ndata = [
       year:"2004",
 	  sitelink: 'https://archi-ho-onhh.tistory.com/64',	
 		day:"update : 2021/03/10",
+		type:"building",
   },
 	{
 		code:19,
@@ -210,6 +228,7 @@ var ndata = [
       year:"2004",
 	  sitelink: 'https://archi-ho-onhh.tistory.com/69',	
 		day:"update : 2021/03/10",
+		type:"building",
   },
 	{
 		code:20,
@@ -220,6 +239,7 @@ var ndata = [
       year:"2020",
 	  sitelink: 'https://archi-ho-onhh.tistory.com/5',	
 		day:"update : 2021/03/10",
+		type:"building",
   },
 	{
 		code:21,
@@ -231,6 +251,7 @@ var ndata = [
       year:"1993",
 	  sitelink: 'https://archi-ho-onhh.tistory.com/37',	
 		day:"update : 2021/03/10",
+		type:"building",
   },{
 		code:22,
 	  CATEGORY:"TOKYO",
@@ -241,6 +262,7 @@ var ndata = [
       year:"2003",
 	  sitelink: 'https://archi-ho-onhh.tistory.com/45',	
 		day:"update : 2021/03/10",
+		type:"building",
   },
 	{
 		code:23,
@@ -252,6 +274,7 @@ var ndata = [
       year:"1997",
 	  sitelink: 'https://archi-ho-onhh.tistory.com/46',	
 		day:"update : 2021/03/10",
+		type:"building",
   },{
 		code:24,
 	  CATEGORY:"TOKYO",
@@ -262,6 +285,7 @@ var ndata = [
       year:"1997",
 	  sitelink: 'https://archi-ho-onhh.tistory.com/47',	
 		day:"update : 2021/03/10",
+		type:"building",
   },
 	{
 		code:25,
@@ -273,6 +297,7 @@ var ndata = [
       year:"N/A",
 	  sitelink: 'https://archi-ho-onhh.tistory.com/49',	
 		day:"update : 2021/03/10",
+		type:"building",
   },{
 		code:26,
 	  CATEGORY:"TOKYO",
@@ -283,6 +308,7 @@ var ndata = [
       year:"2011",
 	  sitelink: 'https://archi-ho-onhh.tistory.com/50',	
 		day:"update : 2021/03/10",
+		type:"building",
   },{
 		code:27,
 	  CATEGORY:"TOKYO",
@@ -293,6 +319,7 @@ var ndata = [
       year:"1969~1998",
 	  sitelink: 'https://archi-ho-onhh.tistory.com/51',	
 		day:"update : 2021/03/10",
+		type:"building",
   },{
 		code:28,
 	  CATEGORY:"TOKYO",
@@ -303,6 +330,7 @@ var ndata = [
       year:"1969~1998",
 	  sitelink: 'https://archi-ho-onhh.tistory.com/52',	
 		day:"update : 2021/03/10",
+		type:"building",
   },{
 		code:29,
 	  CATEGORY:"TOKYO",
@@ -313,6 +341,7 @@ var ndata = [
       year:"1964",
 	  sitelink: 'https://archi-ho-onhh.tistory.com/61',	
 		day:"update : 2021/03/10",
+		type:"building",
   },{
 		code:30,
 	  CATEGORY:"TOKYO",
@@ -323,6 +352,7 @@ var ndata = [
       year:"2020",
 	  sitelink: 'https://archi-ho-onhh.tistory.com/63',	
 		day:"update : 2021/03/10",
+		type:"building",
   },{
 		code:31,
 	  CATEGORY:"TOKYO",
@@ -333,6 +363,7 @@ var ndata = [
       year:"2009",
 	  sitelink: 'https://archi-ho-onhh.tistory.com/65',	
 		day:"update : 2021/03/10",
+		type:"building",
   },{
 		code:32,
 	  CATEGORY:"TOKYO",
@@ -343,6 +374,7 @@ var ndata = [
       year:"2018",
 	  sitelink: '',	
 		day:"update : 2021/04/18",
+		type:"cafe",
   },{
 		code:33,
 	  CATEGORY:"YOKOHAMA",
@@ -353,6 +385,7 @@ var ndata = [
       year:"2007",
 	  sitelink: '',	
 		day:"update : 2021/04/18",
+		type:"building",
   },{
 		code:34,
 	  CATEGORY:"YOKOHAMA",
@@ -363,6 +396,7 @@ var ndata = [
       year:"2019",
 	  sitelink: '',	
 		day:"update : 2021/04/18",
+		type:"building",
   },{
 		code:35,
 	  CATEGORY:"TOKYO",
@@ -373,7 +407,7 @@ var ndata = [
       year:"2020",
 	  sitelink: '',	
 		day:"update : 2021/04/18",
-		type:"info"
+		type:"toilet",
   },
 	
     ];

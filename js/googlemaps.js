@@ -210,9 +210,16 @@ stylers: [
     './img/icons8-marker-30.png';
 
   const icons = {
-    info: {
-      icon: iconBase + "library_maps.png",
+    building: {
+      icon: './img/icons8-marker-30.png',
     },
+    type: {
+      icon: './img/icons8-marker-30.png',
+    },
+    cafe: {
+      icon: './img/icons8-marker-30.png',
+    },
+
   };
 
 //Associate the styled map with the MapTypeId and set it to display.
@@ -292,10 +299,9 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
       marker = new google.maps.Marker({
         id:i,
         position: new google.maps.LatLng(ndata[i]['latitude'], ndata[i]['longitude']),
-        icon: iconBase,
+        icon: icons[ndata[i]['type']].icon,
         map,
-		title: (ndata[i]['name']+' / '+
-		  ndata[i]['architect'])
+		    title: (ndata[i]['name']+' / '+ ndata[i]['architect'])
 
       });
 		
