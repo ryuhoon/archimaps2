@@ -212,7 +212,7 @@ stylers: [
 
   const icons = {
     building: {
-      icon: './img/map-marker-red.png',
+      icon: './img/map-marker-grey.png',
     },
     toilet: {
       icon: './img/map-marker-toilet.png',
@@ -301,7 +301,7 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
         id:i,
         position: new google.maps.LatLng(ndata[i]['latitude'], ndata[i]['longitude']),
         icon: {url: icons[ndata[i]['type']].icon, 
-               scaledSize: new google.maps.Size(32, 43)
+               scaledSize: new google.maps.Size(32, 52)
                },
         map,
 		    title: (ndata[i]['name']+' / '+ ndata[i]['architect'])
