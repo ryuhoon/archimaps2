@@ -309,7 +309,9 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
       marker = new google.maps.Marker({
         id:i,
         position: new google.maps.LatLng(ndata[i]['latitude'], ndata[i]['longitude']),
-        icon: icons[ndata[i]['type']].icon,
+        icon: {url: icons[ndata[i]['type']].icon, 
+               scaledSize: new google.maps.Size(50, 50)
+               },
         map,
 		    title: (ndata[i]['name']+' / '+ ndata[i]['architect'])
 
