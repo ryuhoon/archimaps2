@@ -212,13 +212,13 @@ stylers: [
 
   const icons = {
     building: {
-      icon: './img/map-marker-2-128 red.png',
+      icon: './img/map-marker-red.png',
     },
     toilet: {
-      icon: './img/map-marker-2-128 toilet.png',
+      icon: './img/map-marker-toilet.png',
     },
     cafe: {
-      icon: './img/map-marker-2-128 cafe.png',
+      icon: './img/map-marker-cafe.png',
     },
 
   };
