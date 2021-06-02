@@ -212,22 +212,13 @@ stylers: [
 
   const icons = {
     building: {
-      icon: './img/icons8-marker-30.png',
-      scaledSize: new google.maps.Size(50, 50), // scaled size
-    origin: new google.maps.Point(0,0), // origin
-    anchor: new google.maps.Point(0, 0), // anchor
+      icon: './img/map-marker-2-128 red.png',
     },
-    type: {
-      icon: './img/google-309741_640.png',
-      scaledSize: new google.maps.Size(50, 50), // scaled size
-    origin: new google.maps.Point(0,0), // origin
-    anchor: new google.maps.Point(0, 0), // anchor
+    toilet: {
+      icon: './img/map-marker-2-128 toilet.png',
     },
     cafe: {
-      icon: './img/google-309741_640.png',
-      scaledSize: new google.maps.Size(50, 50), // scaled size
-    origin: new google.maps.Point(0,0), // origin
-    anchor: new google.maps.Point(0, 0), // anchor
+      icon: './img/map-marker-2-128 cafe.png',
     },
 
   };
@@ -310,7 +301,7 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
         id:i,
         position: new google.maps.LatLng(ndata[i]['latitude'], ndata[i]['longitude']),
         icon: {url: icons[ndata[i]['type']].icon, 
-               scaledSize: new google.maps.Size(50, 50)
+               scaledSize: new google.maps.Size(32, 32)
                },
         map,
 		    title: (ndata[i]['name']+' / '+ ndata[i]['architect'])
