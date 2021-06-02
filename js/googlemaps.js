@@ -205,6 +205,7 @@ stylers: [
 							} );
 		const tokyomap = {lat : 35.658450658166664, lng:139.7007586504356}
 		const yokohamamap = {lat: 35.465746, lng: 139.622092}
+
     //icon
     const iconBase =
     './img/icons8-marker-30.png';
@@ -212,12 +213,21 @@ stylers: [
   const icons = {
     building: {
       icon: './img/icons8-marker-30.png',
+      scaledSize: new google.maps.Size(50, 50), // scaled size
+    origin: new google.maps.Point(0,0), // origin
+    anchor: new google.maps.Point(0, 0), // anchor
     },
     type: {
       icon: './img/google-309741_640.png',
+      scaledSize: new google.maps.Size(50, 50), // scaled size
+    origin: new google.maps.Point(0,0), // origin
+    anchor: new google.maps.Point(0, 0), // anchor
     },
     cafe: {
       icon: './img/google-309741_640.png',
+      scaledSize: new google.maps.Size(50, 50), // scaled size
+    origin: new google.maps.Point(0,0), // origin
+    anchor: new google.maps.Point(0, 0), // anchor
     },
 
   };
