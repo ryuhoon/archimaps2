@@ -209,7 +209,7 @@ stylers: [
     const iconBase =
     "https://developers.google.com/maps/documentation/javascript/examples/full/images/";
   const icons = {
-    toilet: {
+    toliet: {
       icon: iconBase + "library_maps.png",
     },
   };
@@ -291,7 +291,7 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
       marker = new google.maps.Marker({
         id:i,
         position: new google.maps.LatLng(ndata[i]['latitude'], ndata[i]['longitude']),
-        icon: icons[ndata[i]['type']].icon,
+        icon: icons[toliet].icon,
         map,
 		title: (ndata[i]['name']+' / '+
 		  ndata[i]['architect'])
