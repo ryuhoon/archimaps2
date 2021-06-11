@@ -204,7 +204,7 @@ var ndata = [
 	  longitude:139.632922,
       year:"2004",
 	  sitelink: 'https://archi-ho-onhh.tistory.com/64',	
-	  img: './img/archidata/Minato Mirai Station' ,
+	  img: './img/archidata/Minato Mirai Station.jpg' ,
 		day:"update : 2021/03/10",
 		type:"building",
   },
