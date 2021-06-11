@@ -310,7 +310,7 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
 		
 		const contentString =
 										
-								[ '<div id="content" oncontextmenu="return false" ondragstart="return false" onselectstart="return false">' +
+								[ '<div id="content" oncontextmenu="return false" ondragstart="return false" onselectstart="return false" onclick="window.scrollTo(0,0)">' +
                 '<div id="siteNotice">' +
 								'</div>'
 
