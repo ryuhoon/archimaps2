@@ -344,7 +344,7 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
       if(marker)
       {
         marker.addListener('click', function() {
-          if(map.getzoom()<8){
+          if(map.getZoom() < 15){
             map.setZoom(map.getZoom() + 1);
             map.setCenter(this.getPosition());
           }
