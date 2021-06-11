@@ -13,10 +13,10 @@ div.img-box {
 	pointer-events : none;
 }
 .img-thumbnail {    
-    width: 14rem;
-	height: 14rem;
+    width: 12rem;
+	height: 16rem;
 	overflow: hidden;
-	object-fit: cover;
+	object-fit: contain;
 }
 
 .gm-style-iw {
