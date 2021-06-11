@@ -344,8 +344,14 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
       if(marker)
       {
         marker.addListener('click', function() {
-          map.setZoom(map.getZoom() + 1);
+          if(map.getzoom()<8){
+            map.setZoom(map.getZoom() + 1);
+            map.setCenter(this.getPosition());
+          }
+          else{
           map.setCenter(this.getPosition());
+          }
+          
         });
         }
     }
