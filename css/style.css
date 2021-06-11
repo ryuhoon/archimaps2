@@ -15,8 +15,8 @@ div.img-box {
 .img-thumbnail {    
     width: 14rem;
 	height: 16rem;
-	overflow: hidden;
 	object-fit: cover;
+	z-index: 1;
 }
 
 .gm-style-iw {
