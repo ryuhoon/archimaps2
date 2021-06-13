@@ -315,7 +315,7 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
 								'</div>'
 
                  + '<div class="img-box">' + '<img class="img-thumbnail" src="'+ './img/archidata/' + ndata[i]['name'] +'.jpg' +'" />' 
-                 + '<button class="btn2" type="button">' +'C'+ '</button>'
+                 //+ '<button class="btn2" type="button">' +'C'+ '</button>'//
                  +'</div>'
                 
 								 +'<div h1 id="firstHeading" class="firstHeading">' 
