@@ -398,7 +398,27 @@ var ndata = [
 	  sitelink: '',	
 		day:"update : 2021/04/18",
 		type:"toilet",
-  },
+  },{
+	code:36,
+  CATEGORY:"TOKYO",
+  name:"Nakagin Capsule Tower",
+  architect:"Kisho Kurokawa",
+  latitude: 35.665775143504696, 
+  longitude:  139.7635251418113,
+  year:"1972",
+  sitelink: 'https://archi-ho-onhh.tistory.com/77',	
+	type:"building",
+},{
+	code:37,
+  CATEGORY:"TOKYO",
+  name:"Blue Bottle Coffee Nakameguro",
+  architect:"Jo Nagasaka / Schemata Architects",
+  latitude: 35.63876124143047, 
+  longitude:  139.69788268079625,
+  year:"2016",
+  sitelink: "" ,
+	type:"cafe",
+},
 	
     ];
 
