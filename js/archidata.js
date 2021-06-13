@@ -390,13 +390,13 @@ var ndata = [
   },{
 		code:35,
 	  CATEGORY:"TOKYO",
-      name:"YOYOGI FUKAMACHI MINI PARK",
+      name:"YOYOGI FUKAMACHI MINI PARK TOILET",
       architect:"SHIGERU BAN",
       latitude: 35.67020558126984, 
 	  longitude: 139.69059862514786,
       year:"2020",
 	  sitelink: '',	
-		note: 'The Tokyo Toilet Project',
+		day: 'The Tokyo Toilet Project',
 		type:"toilet",
   },{
 	code:36,
