@@ -390,13 +390,13 @@ var ndata = [
   },{
 		code:35,
 	  CATEGORY:"TOKYO",
-      name:"TOKYO TOILET SERIES",
-      architect:"N/A",
+      name:"YOYOGI FUKAMACHI MINI PARK",
+      architect:"SHIGERU BAN",
       latitude: 35.67020558126984, 
 	  longitude: 139.69059862514786,
       year:"2020",
 	  sitelink: '',	
-		day:"update : 2021/04/18",
+		note: 'The Tokyo Toilet Project',
 		type:"toilet",
   },{
 	code:36,
@@ -418,6 +418,26 @@ var ndata = [
   year:"2016",
   sitelink: "" ,
 	type:"cafe",
+},{
+	code:38,
+  CATEGORY:"TOKYO",
+  name:"Kuwasawa design school",
+  architect:"Obayashi Corporation",
+  latitude: 35.66557445928202, 
+  longitude:  139.69985733625794,
+  year:"2005",
+  sitelink: "" ,
+	type:"building",
+},{
+	code:39,
+  CATEGORY:"TOKYO",
+  name:"River Side House",
+  architect:"N/A",
+  latitude: 35.472839250293354, 
+  longitude: 139.6318630028834,
+  year:"2008",
+  sitelink: "" ,
+	type:"building",
 },
 	
     ];
