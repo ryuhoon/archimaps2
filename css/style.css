@@ -11,12 +11,20 @@ div.img-box {
 	text-align: center;
 	vertical-align: middle;
 	pointer-events : none;
+	position: relative;
 }
 .img-thumbnail {    
     width: 14rem;
 	height: 16rem;
-	object-fit: cover;
-	z-index: 1;
+	object-fit: cover;	
+}
+.img-copyright{
+	position: absolute;
+    z-index: 1;
+    right: 1.8rem;
+	bottom: -0.5rem;
+    color: #fff;
+    font-size: 0.6rem;
 }
 
 .gm-style-iw {
@@ -138,8 +146,7 @@ about
 	font-size:1rem;
   }
   
-  #about .right-content {
-	margin-left: 30px;
+  #about .right-content {	
 	margin-top: 30px;
   }
   
@@ -167,7 +174,8 @@ about
 	opacity: .9;
   }
 */
-  
+
+
 /* footer */
 .text-secondary {
 	font-size:1.2rem;
