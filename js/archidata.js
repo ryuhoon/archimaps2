@@ -504,6 +504,24 @@ var ndata = [
   sitelink: '',	
 	day: 'The Tokyo Toilet Project',
 	type:"toilet",
+},{
+	code:46,
+  name:"Blue Bottle Coffee Minato Mirai Cafe",
+  architect:"Keiji Ashizawa Design",
+  latitude: 35.45835797151285, 
+  longitude: 139.63090409415906,
+  year:"2020",
+  sitelink: '',	
+  type:"cafe",
+},{
+	code:47,
+  name:"Tera Coffee Hakuraku",
+  architect:"N/A",
+  latitude: 35.490297110924246, 
+  longitude: 139.62762927234846,
+  year:"?",
+  sitelink: '',	
+	type:"cafe",
 },
 	
     ];
