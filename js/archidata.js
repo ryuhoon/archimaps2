@@ -49,7 +49,7 @@ var ndata = [
   }, 
 	{
 		code:5,
-      name:"Yokahama Landmark Tower",
+      name:"Yokohama Landmark Tower",
       architect:"Mitsubishi Estate and Hugh Stubbins and Associates",
       latitude:35.455072,
 	  longitude:139.631364,
@@ -132,7 +132,7 @@ var ndata = [
   },
 	{
 		code:12,
-      name:"Yokahama Motomachi shopping street",
+      name:"Yokohama Motomachi shopping street",
       architect:"who",
       latitude:35.441757,
 	  longitude:139.651039,
