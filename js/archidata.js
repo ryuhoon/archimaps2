@@ -384,7 +384,7 @@ var ndata = [
       latitude: 35.44812740836025, 
 	  longitude: 139.65472591778607,
       year:"2019",
-	  sitelink: '',	
+	  sitelink: 'https://archi-ho-onhh.tistory.com/80',	
 		day:"update : 2021/04/18",
 		type:"building",
   },{
@@ -511,7 +511,7 @@ var ndata = [
   latitude: 35.45835797151285, 
   longitude: 139.63090409415906,
   year:"2020",
-  sitelink: '',	
+  sitelink: 'https://archi-ho-onhh.tistory.com/81',	
   type:"cafe",
 },{
 	code:47,
