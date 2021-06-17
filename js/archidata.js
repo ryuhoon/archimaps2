@@ -522,6 +522,26 @@ var ndata = [
   year:"?",
   sitelink: '',	
 	type:"cafe",
+},{
+	code:48,
+  name:"Poe Coffee",
+  architect:"N/A",
+  latitude: 35.48403397543752, 
+  longitude: 139.62743861398482,
+  year:"?",
+  sitelink: '',	
+	type:"cafe",
+},{
+	code:49,
+  CATEGORY:"TOKYO",
+  name:"Sendagaya Station Public Restroom",
+  architect:"SUPPOSE DESIGN OFFICE",
+  latitude: 35.68247997408825, 
+  longitude: 139.71237484729798,
+  year:"2021",
+  sitelink: '',	
+	day: 'Is Not The Tokyo Toilet Project But Same Concept. "floating" concrete toilet in Tokyo. Concrete Public Toilet',
+	type:"toilet",
 },
 	
     ];
