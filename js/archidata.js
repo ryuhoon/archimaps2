@@ -542,6 +542,17 @@ var ndata = [
   sitelink: '',	
 	day: 'Is Not The Tokyo Toilet Project But Same Concept. "floating" concrete toilet in Tokyo. Concrete Public Toilet',
 	type:"toilet",
+},{
+	code:50,
+  CATEGORY:"TOKYO",
+  name:"Shibuya Station",
+  architect:"Tadao Ando",
+  latitude: 35.658196087088946, 
+  longitude: 139.70167710354727,
+  year:"2008",
+  sitelink: '',	
+	day: 'Tokyu Toyoko Line and Tokyo Metro Fukutoshin Line. Underground Spaceship.',
+	type:"building",
 },
 	
     ];
