@@ -313,7 +313,7 @@ var ndata = [
   },{
 		code:28,
 	  CATEGORY:"TOKYO",
-      name:"Tokyo Daikanyama Hillside Terrace",
+      name:"Tokyo Daikanyama Hillside Terrace2",
       architect:"Fumihiko Maki",
       latitude: 35.64798631937812, 
 	  longitude: 139.70068199931163,
