@@ -207,9 +207,7 @@ stylers: [
 		const yokohamamap = {lat: 35.465746, lng: 139.622092}
 
     //icon
-    const iconBase =
-    './img/icons8-marker-30.png';
-
+   
   const icons = {
     building: {
       icon: './img/map-marker-grey.png',
@@ -292,10 +290,11 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
 	
 
 
+var gmarkers = [];
 	//set marker
 	var infowindow = new google.maps.InfoWindow();
   var marker, i;
-		
+				
     for (i = 0; i < ndata.length; i++) {  
       marker = new google.maps.Marker({
         id:i,
@@ -305,8 +304,8 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
                },
         map,
 		    title: (ndata[i]['name']+' / '+ ndata[i]['architect'])
-
       });
+      gmarkers.push(marker);
 		
 		const contentString =
 										
@@ -337,14 +336,19 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
 								 
 								] 
 	
-	
+       google.maps.event.addListener(map, 'click', function() {
+          infowindow.close();
+              });
+    
       google.maps.event.addListener(marker, 'click', (function(marker, i) {
         return function() {
           infowindow.setContent(contentString + '<b>View in Google Maps: </b>' + "<a target='_blank'" + "href=https://maps.google.com/?q=" + ndata[i]['latitude']+ ',' + ndata[i]['longitude'] + '>'+ 'Click</a>');
           infowindow.open(map, marker);
         }
       })(marker, i));
-		
+
+      gmarkers.push(marker);
+
       if(marker)
       {
         marker.addListener('click', function() {
@@ -355,12 +359,12 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
           else{
           map.setCenter(this.getPosition());
           }
-          
-        });
+          });
+          gmarkers.push(marker);
         }
     }
-	
-		
+   
+
 	// Create the DIV to hold the control and call the CenterControl()
   // constructor passing in this DIV.
   const tokyomapControlDiv = document.createElement("div");

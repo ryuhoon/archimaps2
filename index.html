@@ -135,6 +135,9 @@
 					<li class="nav-item" >
 						<a class="nav-link" class="scroll-to-section" href="#map">Map</a>
 					</li>
+					<li class="nav-item" >
+						<a class="nav-link" class="scroll-to-section" href="#maplist">Map List</a>
+					</li>
 				<!--
 					<li class="nav-item">
 						<a class="nav-link" href="./slide.html">Slide</a>
@@ -222,6 +225,67 @@
 		<!-- Google maps -->
 		<div id="map"></div>
 
+		
+	<section  class="section" >
+		<!--
+		<div class="row">
+			<div class="card card-body">
+				<input id="search-input" class="form-control" type="text">
+			</div>
+		</div>
+		-->
+
+		<div id="maplist" style="margin-top: 1rem;">
+		<!--동적 테이블 Test입니다. 
+		<a href="javascript:google.maps.event.trigger(gmarkers[0],'click');">Open Info Window</a>
+		<a href="javascript:google.maps.event.trigger(gmarkers[1],'click');">Open Info Window 2</a>
+		<a href="javascript:void(0);" onclick="infoOpen('2');">mark 1</a>
+		<a href="#" onclick="infoOpen(i);">Open Info Window</a>
+		-->
+
+		<table class="table table-striped">
+			<tr  class="bg-info">
+				<th  class="bg-info" data-colname="name" data-order="desc">Name</th>
+				<th  data-colname="architect" data-order="desc">Architect</th>
+				<th  data-colname="year" data-order="desc">Year</th>
+				<th  data-colname="type" data-order="desc">type</th>
+				<th  data-colname="link" data-order="desc">View in Blog</th>
+			</tr>
+			<tbody id="table1">
+				
+			</tbody>
+		</table>		
+
+		<script> 
+			buildTable(ndata) 
+
+			function infoOpen(i) {
+			 	 google.maps.event.trigger(gmarkers[i], 'click');
+				}
+
+			function buildTable(data) {
+			var table = document.getElementById('table1') 
+			table.innerHTML = ''
+			for (var i=0; i < data.length; i++) { 
+				var colname = `name-${i}`
+     		 	var colage = `age-${i}`
+      			var colbirth = `birth-${i}`
+
+				var row = 
+				`<tr> 
+				<td>${ndata[i].name}</td>
+				 <td>${ndata[i].architect}</td> 
+				 <td>${ndata[i].year}</td>
+				 <td>${ndata[i].type}</td>
+				 <td><a href= "${ndata[i].sitelink}"target="_blank">Click</a></td>
+				 </tr>` 
+				table.innerHTML += row 
+				} 
+			} 
+			</script>
+		</div>
+</section>
+
 		<!--kakao -->
 		<section class="section">
 			<script>
@@ -240,7 +304,7 @@
 			<h1 class="subtitle">⬇⬇ What do you want to see more in japan? I will wait for your comment ⬇⬇</h1>
 			
 		<!-- 댓글 -->
-			<div id="disqus_thread" style=" width:80%; margin: 0 auto;"></div>
+			<div id="disqus_thread" style="margin: 0 auto;"></div>
 		<script>
 			/**
 			 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
@@ -261,17 +325,16 @@ this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your pag
 			})();
 		</script>
 			</section>
-			
+	</body>	
 						
 	<footer>
-		<div class="jumbotron text-center mt-1 mb-0">
+		<div class="jumbotron text-center mt-1 mb-0" id="opendrag">
 			<h3 class="text-secondary">ho_on.hh's Architectural maps</h3>
 			<p>
 				<span class="text-primary">This webpage is powered by @ho_on.hh / Designed by @ho_on.hh / Photo by @ho_on.hh
 					<br>©Copyright <a href="https://www.instagram.com/ho_on.hh/">@ho_on.hh</a> / Contact : supply.hoon.hh@gmail.com</br></span>
 			</p>
 			 </div>
-	</footer>
+	</footer>	
 	
-	</body>
 </html>
