@@ -83,6 +83,12 @@ body {
 	height: 100px;
 	overflow: auto;	
 }
+.mapshow{
+	font-family: NanumSquareR;
+	font-size:1.2rem;
+	line-height: 1.68;
+	text-align: center;	
+}
 
 /* 맵리스트 관련*/
 

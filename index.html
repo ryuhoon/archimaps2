@@ -225,7 +225,19 @@
 		<!-- Google maps -->
 		<div id="map"></div>
 
-		
+	
+		<!--kakao -->
+		<section class="section">
+			<script>
+				if ( window.matchMedia( '( min-width: 728px )' ).matches == true ) {
+					document.write( '<ins class="kakao_ad_area" style="display:none;" data-ad-unit = "DAN-2cLxXGkU6EOyKqmK"  data-ad-width = "728" data-ad-height = "90"></ins><script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async><\/script>' );
+				}
+				if ( window.matchMedia( '( max-width: 727px )' ).matches == true ) {
+					document.write( '<ins class="kakao_ad_area" style="display:none;" data-ad-unit = "DAN-e6IhFjmuatV7jf2g" data-ad-width = "320" data-ad-height = "100"></ins><script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async><\/script>' );
+				}
+			</script>
+		</section>
+
 	<section  class="section" >
 		<!--
 		<div class="row">
@@ -234,56 +246,67 @@
 			</div>
 		</div>
 		-->
+	<div id="maplist" style="margin-top: 1rem;">
+		<div>
+			<a href=#none class="mapshow" id="show" onclick="if(hide.style.display=='none') {hide.style.display='';show.innerText='▲Map List Close'} 
+			else {hide.style.display='none';show.innerText='▶Map List Open'}">▶Map List Open</a>
+			<div id="hide" style="display: none">
 
-		<div id="maplist" style="margin-top: 1rem;">
-		<!--동적 테이블 Test입니다. 
-		<a href="javascript:google.maps.event.trigger(gmarkers[0],'click');">Open Info Window</a>
-		<a href="javascript:google.maps.event.trigger(gmarkers[1],'click');">Open Info Window 2</a>
-		<a href="javascript:void(0);" onclick="infoOpen('2');">mark 1</a>
-		<a href="#" onclick="infoOpen(i);">Open Info Window</a>
-		-->
-
-		<table class="table table-striped">
-			<tr  class="bg-info">
-				<th  class="bg-info" data-colname="name" data-order="desc">Name</th>
-				<th  data-colname="architect" data-order="desc">Architect</th>
-				<th  data-colname="year" data-order="desc">Year</th>
-				<th  data-colname="type" data-order="desc">type</th>
-				<th  data-colname="link" data-order="desc">View in Blog</th>
-			</tr>
-			<tbody id="table1">
 				
-			</tbody>
-		</table>		
-
-		<script> 
-			buildTable(ndata) 
-
-			function infoOpen(i) {
-			 	 google.maps.event.trigger(gmarkers[i], 'click');
-				}
-
-			function buildTable(data) {
-			var table = document.getElementById('table1') 
-			table.innerHTML = ''
-			for (var i=0; i < data.length; i++) { 
-				var colname = `name-${i}`
-     		 	var colage = `age-${i}`
-      			var colbirth = `birth-${i}`
-
-				var row = 
-				`<tr> 
-				<td>${ndata[i].name}</td>
-				 <td>${ndata[i].architect}</td> 
-				 <td>${ndata[i].year}</td>
-				 <td>${ndata[i].type}</td>
-				 <td><a href= "${ndata[i].sitelink}"target="_blank">Click</a></td>
-				 </tr>` 
-				table.innerHTML += row 
-				} 
-			} 
-			</script>
+					<!--동적 테이블 Test입니다. 
+					<a href="javascript:google.maps.event.trigger(gmarkers[0],'click');">Open Info Window</a>
+					<a href="javascript:google.maps.event.trigger(gmarkers[1],'click');">Open Info Window 2</a>
+					<a href="javascript:void(0);" onclick="infoOpen('2');">mark 1</a>
+					<a href="#" onclick="infoOpen(i);">Open Info Window</a>
+					-->
+			
+					<table class="table table-striped">
+						<tr  class="bg-info">
+							<th  class="bg-info" data-colname="name" data-order="desc">Name</th>
+							<th  data-colname="architect" data-order="desc">Architect</th>
+							<th  data-colname="city" data-order="desc">City</th>
+							<th  data-colname="year" data-order="desc">Year</th>							
+							<th  data-colname="type" data-order="desc">type</th>
+							<th  data-colname="link" data-order="desc">View in Blog</th>
+						</tr>
+						<tbody id="table1">
+							
+						</tbody>
+					</table>		
+			
+					<script> 
+						buildTable(ndata) 
+			
+						function infoOpen(i) {
+							  google.maps.event.trigger(gmarkers[i], 'click');
+							}
+			
+						function buildTable(data) {
+						var table = document.getElementById('table1') 
+						table.innerHTML = ''
+						for (var i=0; i < data.length; i++) { 
+							var colname = `name-${i}`
+							  var colage = `age-${i}`
+							  var colbirth = `birth-${i}`
+			
+							var row = 
+							`<tr> 
+							<td>${ndata[i].name}</td>
+							 <td>${ndata[i].architect}</td> 
+							 <td>${ndata[i].city}</td>
+							 <td>${ndata[i].year}</td>							 
+							 <td>${ndata[i].type}</td>
+							 <td><a href= "${ndata[i].sitelink}"target="_blank">Click</a></td>
+							 </tr>` 
+							table.innerHTML += row 
+							} 
+						} 
+						</script>
+					</div>
+			</div>
 		</div>
+
+		
 </section>
 
 		<!--kakao -->
