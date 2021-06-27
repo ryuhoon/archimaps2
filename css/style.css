@@ -60,29 +60,6 @@ body {
   padding: 0;
 }
 
-.opendrag {
-    -moz-user-select: text !important;
-    -webkit-user-select: text !important;
-    -ms-user-select: text !important;
-    user-select: text !important;
-}
-
-.clearfix{
-	overflow: auto;
-	display:block;
-	min-height:1%;
-	}
-		
-.clearfix::after{
-	clear: both;
-	display: block;
-	content: "";
-	}
-
-.tbody_table1{
-	height: 100px;
-	overflow: auto;	
-}
 .mapshow{
 	font-family: NanumSquareR;
 	font-size:1.2rem;
@@ -90,9 +67,14 @@ body {
 	text-align: center;	
 }
 .maplist{
-	background-color: #f8f9fa!important;
+	background-color: #f8f9fa!important;	
 }
-
+.table {
+	table-layout:fixed;
+	width:100%;
+  }
+  
+  
 /* 맵리스트 관련*/
 
 .navigation_list{
@@ -235,6 +217,9 @@ about
   html {
     font-size: 10px;
   }
+  .td {
+	font-size: 0.5rem;
+}
 	.navbar-brand {
 		font-size:1.6rem;
 	}
