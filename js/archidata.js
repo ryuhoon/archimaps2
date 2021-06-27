@@ -1,7 +1,7 @@
 var ndata = [
 	{
 	  code:1,
-    city:"YOKOHAMA",
+    city:"Yokohama",
       name:"Wind tower",
       architect:"Toyo ito",
       latitude:35.466968,
@@ -14,7 +14,7 @@ var ndata = [
   },
 	{
 		code:2,
-    city:"YOKOHAMA",
+    city:"Yokohama",
       name:"Gazebo",
       architect:"Riken yamamoto",
       latitude:35.473900,
@@ -27,7 +27,7 @@ var ndata = [
   },
     {
 		code:3,
-    city:"YOKOHAMA",
+    city:"Yokohama",
       name:"Motomachi station",
       architect:"Toyo ito",
       latitude:35.442835,
@@ -40,7 +40,7 @@ var ndata = [
   }, 
 	{
 		code:4,
-    city:"YOKOHAMA",
+    city:"Yokohama",
       name:"Rotunda",
       architect:"Riken yamamoto",
       latitude:35.476722490774726, 
@@ -53,7 +53,7 @@ var ndata = [
   }, 
 	{
 		code:5,
-    city:"YOKOHAMA",
+    city:"Yokohama",
       name:"Yokohama Landmark Tower",
       architect:"Mitsubishi Estate and Hugh Stubbins and Associates",
       latitude:35.455072,
@@ -66,7 +66,7 @@ var ndata = [
   }, 
 	{
 	  code:6,
-    city:"YOKOHAMA",
+    city:"Yokohama",
       name:"Koyasu Elementary School",
       architect:"Riken Yamamoto & Field shop",
       latitude:35.490149,
@@ -79,7 +79,7 @@ var ndata = [
   }, 
 	{
 		code:7,
-    city:"YOKOHAMA",
+    city:"Yokohama",
       name:"OsanBashi Yokohama International Passenger Terminal",
       architect:"FOA (Foreign Office Architects)",
       latitude:35.449577,
@@ -92,7 +92,7 @@ var ndata = [
   }, 
 	{
 		code:8,
-    city:"YOKOHAMA",
+    city:"Yokohama",
       name:"Yokohama I-land tower",
       architect:"Maki and associates",
       latitude:35.450230,
@@ -105,7 +105,7 @@ var ndata = [
   }, 
 	{
 		code:9,
-    city:"YOKOHAMA",
+    city:"Yokohama",
       name:"Yokohama New City Hall",
       architect:"Maki and associates & Takenaka corporation",
       latitude:35.450380,
@@ -118,7 +118,7 @@ var ndata = [
   }, 
 	{
 		code:10,
-    city:"YOKOHAMA",
+    city:"Yokohama",
       name:"Yokohama Red Brick Warehouse",
       architect:"who",
       latitude:35.452708,
@@ -131,7 +131,7 @@ var ndata = [
   }, 
 	{
 		code:11,
-    city:"YOKOHAMA",
+    city:"Yokohama",
       name:"Queen's square Yokohama",
       architect:"Nihon Sekki + Mitsubishi Jisho Sekkei",
       latitude:35.457003,
@@ -143,7 +143,7 @@ var ndata = [
   },
 	{
 		code:12,
-    city:"YOKOHAMA",
+    city:"Yokohama",
       name:"Yokohama Motomachi shopping street",
       architect:"who",
       latitude:35.441757,
@@ -156,7 +156,7 @@ var ndata = [
   }, 
 	{
 		code:13,
-    city:"YOKOHAMA",
+    city:"Yokohama",
       name:"Yokohama City Housing Mitsukyo Heights",
       architect:"Riken Yamamoto",
       latitude:35.464838,
@@ -168,7 +168,7 @@ var ndata = [
   }, 
 	{
 		code:14,
-    city:"YOKOHAMA",
+    city:"Yokohama",
       name:"Yokohama Arte Portside",
       architect:"Michael Graves",
       latitude:35.468177,
@@ -180,7 +180,7 @@ var ndata = [
   }, 
 	{
 		code:15,
-    city:"YOKOHAMA",
+    city:"Yokohama",
       name:"Yokohama Portside",
       architect:"who",
       latitude:35.467714,
@@ -192,7 +192,7 @@ var ndata = [
   }, 
 	{
 		code:16,
-    city:"YOKOHAMA",
+    city:"Yokohama",
       name:"Yokohama Oakwood Suites",
       architect:"who",
       latitude:35.451301,
@@ -203,7 +203,7 @@ var ndata = [
 		type:"building",
   }, {
 		code:17,
-    city:"YOKOHAMA",
+    city:"Yokohama",
       name:"Yokohama Hakuraku Housing",
       architect:"who",
       latitude:35.495499,
@@ -215,7 +215,7 @@ var ndata = [
   }, 
 	{
 		code:18,
-    city:"YOKOHAMA",
+    city:"Yokohama",
       name:"Minato Mirai Station",
       architect:"NIKKEN Sekki + Mitsubishi Jisho Sekkei",
       latitude:35.457301, 
@@ -228,7 +228,7 @@ var ndata = [
   },
 	{
 		code:19,
-    city:"YOKOHAMA",
+    city:"Yokohama",
       name:"Bashamichi Station",
       architect:"Hiroshi Naito",
       latitude:35.450180, 
@@ -240,7 +240,7 @@ var ndata = [
   },
 	{
 		code:20,
-    city:"YOKOHAMA",
+    city:"Yokohama",
       name:"UNIQLO PARK",
       architect:"Sou Fujimoto",
       latitude:35.381398, 
@@ -253,7 +253,7 @@ var ndata = [
   },
 	{
 		code:21,
-	  city:"TOKYO",
+	  city:"Tokyo",
       name:"M Building",
       architect:"Jun Itami",
       latitude:35.669773, 
@@ -264,7 +264,7 @@ var ndata = [
 		type:"building",
   },{
 		code:22,
-	  city:"TOKYO",
+	  city:"Tokyo",
       name:"Shinonome Canal Court CODAN",
       architect:"Riken Yamamoto",
       latitude:35.645963, 
@@ -276,7 +276,7 @@ var ndata = [
   },
 	{
 		code:23,
-	  city:"TOKYO",
+	  city:"Tokyo",
       name:"Odaiba Fuji TV",
       architect:"Kenzo tange",
       latitude:35.626528, 
@@ -287,7 +287,7 @@ var ndata = [
 		type:"building",
   },{
 		code:24,
-	  city:"TOKYO",
+	  city:"Tokyo",
       name:"Aoyama Technical College",
       architect:"Makoto Sei Watanabe",
       latitude:35.654006377712165, 
@@ -299,7 +299,7 @@ var ndata = [
   },
 	{
 		code:25,
-	  city:"TOKYO",
+	  city:"Tokyo",
       name:"Tokyo domo hotel",
       architect:"N/A",
       latitude:35.69946397508912, 
@@ -310,7 +310,7 @@ var ndata = [
 		type:"building",
   },{
 		code:26,
-	  city:"TOKYO",
+	  city:"Tokyo",
       name:"Daikanyama T-site Tsutaya",
       architect:"Klein Dytham architect",
       latitude:35.64907796803531, 
@@ -321,7 +321,7 @@ var ndata = [
 		type:"building",
   },{
 		code:27,
-	  city:"TOKYO",
+	  city:"Tokyo",
       name:"Tokyo Daikanyama Hillside Terrace",
       architect:"Fumihiko Maki",
       latitude:35.64802485903455, 
@@ -332,7 +332,7 @@ var ndata = [
 		type:"building",
   },{
 		code:28,
-	  city:"TOKYO",
+	  city:"Tokyo",
       name:"Tokyo Daikanyama Hillside Terrace2",
       architect:"Fumihiko Maki",
       latitude: 35.64798631937812, 
@@ -343,7 +343,7 @@ var ndata = [
 		type:"building",
   },{
 		code:29,
-	  city:"TOKYO",
+	  city:"Tokyo",
       name:"Yoyogi National Gymnasium",
       architect:"Kenzo tange",
       latitude: 35.667865938086756,
@@ -354,7 +354,7 @@ var ndata = [
 		type:"building",
   },{
 		code:30,
-	  city:"TOKYO",
+	  city:"Tokyo",
       name:"MIYASHITA PARK",
       architect:"TAKENAKA CORPORATION, NIKKEN SEKKEI",
       latitude: 35.66219010570672, 
@@ -365,7 +365,7 @@ var ndata = [
 		type:"building",
   },{
 		code:31,
-	  city:"TOKYO",
+	  city:"Tokyo",
       name:"Tokyo Carina store",
       architect:"SANAA, (Kazuyo Sejima + Ryue Nishizawa)",
       latitude: 35.663551512714136, 
@@ -376,7 +376,7 @@ var ndata = [
 		type:"building",
   },{
 		code:32,
-	  city:"TOKYO",
+	  city:"Tokyo",
       name:"Hotel KOE TOKYO",
       architect:"SUPPOSE DESIGN OFFICE",
       latitude: 35.662946771151965,  
@@ -387,7 +387,7 @@ var ndata = [
 		type:"cafe",
   },{
 		code:33,
-	  city:"YOKOHAMA",
+	  city:"Yokohama",
       name:"YOKOSUKA MUSEUM OF ART",
       architect:"RIKEN YAMAMOTO & FIELDSHOP",
       latitude: 35.25988399421248,   
@@ -398,7 +398,7 @@ var ndata = [
 		type:"building",
   },{
 		code:34,
-	  city:"YOKOHAMA",
+	  city:"Yokohama",
       name:"GUNDAM FACTORY YOKOHAMA",
       architect:"N/A",
       latitude: 35.44812740836025, 
@@ -409,7 +409,7 @@ var ndata = [
 		type:"building",
   },{
 		code:35,
-	  city:"TOKYO",
+	  city:"Tokyo",
       name:"YOYOGI FUKAMACHI MINI PARK TOILET",
       architect:"SHIGERU BAN",
       latitude: 35.67020558126984, 
@@ -420,7 +420,7 @@ var ndata = [
 		type:"toilet",
   },{
 	code:36,
-  city:"TOKYO",
+  city:"Tokyo",
   name:"Nakagin Capsule Tower",
   architect:"Kisho Kurokawa",
   latitude: 35.665775143504696, 
@@ -430,7 +430,7 @@ var ndata = [
 	type:"building",
 },{
 	code:37,
-  city:"TOKYO",
+  city:"Tokyo",
   name:"Blue Bottle Coffee Nakameguro",
   architect:"Jo Nagasaka / Schemata Architects",
   latitude: 35.63876124143047, 
@@ -440,7 +440,7 @@ var ndata = [
 	type:"cafe",
 },{
 	code:38,
-  city:"TOKYO",
+  city:"Tokyo",
   name:"Kuwasawa design school",
   architect:"Obayashi Corporation",
   latitude: 35.66557445928202, 
@@ -450,7 +450,7 @@ var ndata = [
 	type:"building",
 },{
 	code:39,
-  city:"TOKYO",
+  city:"Tokyo",
   name:"River Side House",
   architect:"N/A",
   latitude: 35.472839250293354, 
@@ -460,7 +460,7 @@ var ndata = [
 	type:"building",
 },{
 	code:40,
-  city:"TOKYO",
+  city:"Tokyo",
   name:"HARU-NO-OGAWA COMMUNITY PARK TOILET",
   architect:"SHIGERU BAN",
   latitude: 35.67262749175915, 
@@ -471,7 +471,7 @@ var ndata = [
 	type:"toilet",
 },{
 	code:41,
-  city:"TOKYO",
+  city:"Tokyo",
   name:"JINGU-DORI PARK TOILET",
   architect:"TADAO ANDO",
   latitude: 35.66432274922145, 
@@ -482,7 +482,7 @@ var ndata = [
 	type:"toilet",
 },{
 	code:42,
-  city:"TOKYO",
+  city:"Tokyo",
   name:"NISHIHARA ITCHOME PARK TOILET",
   architect:"TAKENOSUKE SAKAKURA",
   latitude: 35.677699721206174, 
@@ -493,7 +493,7 @@ var ndata = [
 	type:"toilet",
 },{
 	code:43,
-  city:"TOKYO",
+  city:"Tokyo",
   name:"HIGASHI SANCHOME TOILET",
   architect:"NAO TAMURA / PRODUCT DESIGNER",
   latitude: 35.649296730673115, 
@@ -504,7 +504,7 @@ var ndata = [
 	type:"toilet",
 },{
 	code:44,
-  city:"TOKYO",
+  city:"Tokyo",
   name:"EBISU PARK TOILET",
   architect:"MASAMICHI KATAYAMA / WONDERWALL®︎ / INTERIOR DESIGNER",
   latitude: 35.64733230224987, 
@@ -515,7 +515,7 @@ var ndata = [
 	type:"toilet",
 },{
 	code:45,
-  city:"TOKYO",
+  city:"Tokyo",
   name:"EBISU EAST PARK TOILET",
   architect:"FUMIHIKO MAKI",
   latitude: 35.648452987363314,
@@ -526,7 +526,7 @@ var ndata = [
 	type:"toilet",
 },{
 	code:46,
-  city:"YOKOHAMA",
+  city:"Yokohama",
   name:"Blue Bottle Coffee Minato Mirai Cafe",
   architect:"Keiji Ashizawa Design",
   latitude: 35.45835797151285, 
@@ -536,7 +536,7 @@ var ndata = [
   type:"cafe",
 },{
 	code:47,
-  city:"YOKOHAMA",
+  city:"Yokohama",
   name:"Tera Coffee Hakuraku",
   architect:"N/A",
   latitude: 35.490297110924246, 
@@ -546,7 +546,7 @@ var ndata = [
 	type:"cafe",
 },{
 	code:48,
-  city:"YOKOHAMA",
+  city:"Yokohama",
   name:"Poe Coffee",
   architect:"N/A",
   latitude: 35.48403397543752, 
@@ -556,7 +556,7 @@ var ndata = [
 	type:"cafe",
 },{
 	code:49,
-  city:"TOKYO",
+  city:"Tokyo",
   name:"Sendagaya Station Public Restroom",
   architect:"SUPPOSE DESIGN OFFICE",
   latitude: 35.68247997408825, 
@@ -567,7 +567,7 @@ var ndata = [
 	type:"toilet",
 },{
 	code:50,
-  city:"TOKYO",
+  city:"Tokyo",
   name:"Shibuya Station",
   architect:"Tadao Ando",
   latitude: 35.658196087088946, 

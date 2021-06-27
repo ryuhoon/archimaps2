@@ -70,7 +70,8 @@ body {
 	background-color: #f8f9fa!important;	
 }
 .table {
-	table-layout:fixed;
+	
+	table-layout: fixed;
 	width:100%;
   }
   
@@ -217,9 +218,19 @@ about
   html {
     font-size: 10px;
   }
-  .td {
-	font-size: 0.5rem;
-}
+  th:nth-child(4) {
+    display:none;
+  }  
+  td:nth-child(4) {
+    display:none;
+  }  
+  th:nth-child(5) {
+    display:none;
+  }  
+  td:nth-child(5) {
+    display:none;
+  }  
+
 	.navbar-brand {
 		font-size:1.6rem;
 	}
