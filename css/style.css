@@ -155,12 +155,25 @@ about
 	color: #35465d;
 	margin-top: -10px;
   }
-  #about .section-heading h6 {
+  .section-heading h6 {
 	font-family: NanumSquareR;
-	font-size:1.2rem;
-	line-height: 1.68;
-	text-align: center;
+	font-size:1rem;	
+	text-align: left;
 	color: #35465d;
+	position: relative;     
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-left: 40px;
+  }
+  .section-heading h6:before {
+	width: 30px;
+	height: 1px;
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0.5rem;
+	background-color: #35465d;
   }
   
   #about img {
@@ -175,11 +188,27 @@ about
   }
   
   #about .right-content {	
-	margin-top: 30px;
+	
   }
-  
-  #about .right-content .thumb {
+
+  #about .right-content .contactbox {
+	padding: 6px 9px 6px 8px;
+    border-radius: 10px;
+    box-shadow: rgb(0 0 0 / 8%) 0px 3px 6px 0px;
+    border: 1px solid rgb(232, 232, 232);
+    text-align: center;
+	margin-top: 0.5rem;
+}
+
+  #about .right-content .noticecontent {
 	position: relative;
+	padding: 20px 10px;
+	margin-top: 0.5rem;
+	text-align: left;
+	box-shadow: rgb(0 0 0 / 8%) 0px 3px 6px 0px;
+	border-width: 1px 1px 1px 4px;
+	border-style: solid;
+	border-color: rgb(232, 232, 232) rgb(232, 232, 232) rgb(232, 232, 232) black;
   }
   
  /* #about .right-content .thumb a {
