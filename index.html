@@ -73,6 +73,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 	<script  src="./js/googlemaps.js"></script>
 	<script  src="./js/archidata.js"></script>    
+	<script  src="./js/noticeboxdata.js"></script>    
 	
 	<script src="https://kit.fontawesome.com/55d6f8bef3.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="./css/style.css" />
@@ -207,6 +208,30 @@
 							</div>
 
 							<div class="noticebox">
+								
+								<div class="table-box">	
+									<table class="table table-striped">				
+										
+										<tbody id="table2">
+											
+										</tbody>
+									</table>		
+								</div>
+									<script>
+										function buildTable(notidata) {
+										var table = document.getElementById('table2') 
+										table.innerHTML = ''
+										for (var i=0; i < notidata.length; i++) {					
+											var row = 
+											`<tr> 
+											 <td>${noticeboxdata[i].noticeday}</td>
+											 <td>${noticeboxdata[i].noticetext}</td>
+											 </tr>` 
+											table.innerHTML += row 
+											} 
+										} 
+										</script>
+								
 								<div class="noticecontent">
 									<div class="noticeeday">2021/06/29
 									</div>

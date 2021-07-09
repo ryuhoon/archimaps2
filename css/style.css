@@ -82,19 +82,19 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
 }
-.html__link {
+.postlink {
     text-align: justify;
     width: 100%;
     margin-bottom: 30px;
     padding: 10px 10px;
     text-decoration: none;
     font-size: 20px;
-    color: black;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    color: #35465d;
+    border-top: 1px solid #35465d;
+    border-bottom: 1px solid #35465d;
 }
 /* 맵리스트 관련*/
 
