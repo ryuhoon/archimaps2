@@ -73,7 +73,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 	<script  src="./js/googlemaps.js"></script>
 	<script  src="./js/archidata.js"></script>    
-	<script  src="./js/noticeboxdata.js"></script>    
+	<script  src="./js/noticeboxdata.js"></script>   
+	<script  src="./js/postboxdata.js"></script>
 	
 	<script src="https://kit.fontawesome.com/55d6f8bef3.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="./css/style.css" />
@@ -150,11 +151,13 @@
 					<li class="nav-item">
 						<a class="nav-link" href="https://archi-ho-onhh.tistory.com/">Blog</a>
 					</li>
+					<!--
 					<li class="nav-item">
 						<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"
 							>Disabled</a
 						>
 					</li>
+					-->	
 				</ul>
 			</div>
 
@@ -206,68 +209,32 @@
 							<div class="section-heading">
 								<h6>Notice</h6>								
 							</div>
-
+							
 							<div class="noticebox">
-								
-								<div class="table-box">	
-									<table class="table table-striped">				
-										
-										<tbody id="table2">
-											
-										</tbody>
-									</table>		
-								</div>
+									<div id="table2">
+									</div>
 									<script>
+										buildTable(noticeboxdata) 
 										function buildTable(notidata) {
 										var table = document.getElementById('table2') 
 										table.innerHTML = ''
 										for (var i=0; i < notidata.length; i++) {					
 											var row = 
-											`<tr> 
-											 <td>${noticeboxdata[i].noticeday}</td>
-											 <td>${noticeboxdata[i].noticetext}</td>
-											 </tr>` 
+											`
+											<div class="noticecontent">
+										    <div class="noticeday">${noticeboxdata[i].noticeday}</div>
+											<div class="noticetext">${noticeboxdata[i].noticetext}</div></div>
+											 ` 
 											table.innerHTML += row 
 											} 
 										} 
 										</script>
-								
-								<div class="noticecontent">
-									<div class="noticeeday">2021/06/29
-									</div>
-									<div class="noticetext">
-									맵리스트 추가완료. <br>
-									도쿄, 요코하마 지역 추가됨 <br>
-									name:"Shibuya Station" <br>
-									name:"Sendagaya Station Public Restroom" <br>
-									</div>
-								</div>
-								<div class="noticecontent">
-									<div class="noticeeday">2021/06/27
-									</div>
-									<div class="noticetext">
-									도쿄, 요코하마 카페 추가됨 <br>
-									name:"Poe Coffee" <br>
-									name:"Tera Coffee Hakuraku" <br>
-									</div>
-								</div><div class="noticecontent">
-									<div class="noticeeday">2021/06/25
-									</div>
-									<div class="noticetext">
-									도쿄, 요코하마 카페 추가됨 <br>
-									name:"Blue Bottle Coffee Minato Mirai Cafe" <br>
-									도쿄 화장실 프로젝트 추가됨.TOKYO Toilet Project
-									</div>
-								</div>
 							</div>
-
 								<div class="contactbox">
 									<div class="contacttext">Contact : <br>
 										supply.hoon.hh@gmail.com</div>
 								</div>
-								
-							
-						</div>
+							</div>
 					</div>
 				</div>
 			</div>
@@ -303,79 +270,55 @@
 			</script>
 		</section>
 
-	<section  class="section" id="maplist">
-		<!--
-		<div class="row">
-			<div class="card card-body">
-				<input id="search-input" class="form-control" type="text">
-			</div>
-		</div>
-		-->
+	<section class="section" id="maplist">
 		<div class="section-heading">
 			<h6>Map List</h6>								
 		</div>
-	<div class="maplist" >		
-		<div>
-			<a href=#none class="mapshow" id="show" onclick="if(hide.style.display=='none') {hide.style.display='';show.innerText='▲Map List Close'} 
-			else {hide.style.display='none';show.innerText='▶Map List Open'}">▶Map List Open</a>
-			<div id="hide" style="display: none">
 
-				
-					<!--동적 테이블 Test입니다. 
-					<a href="javascript:google.maps.event.trigger(gmarkers[0],'click');">Open Info Window</a>
-					<a href="javascript:google.maps.event.trigger(gmarkers[1],'click');">Open Info Window 2</a>
-					<a href="javascript:void(0);" onclick="infoOpen('2');">mark 1</a>
-					<a href="#" onclick="infoOpen(i);">Open Info Window</a>
-					-->
-				<div class="table-box">	
-					<table class="table table-striped">				
-						<tr  class="bg-info">
-							<th  class="bg-info" style="width: 25%"data-colname="name" data-order="desc">Name</th>
-							<th  style="width: 25%" data-colname="architect" data-order="desc">Architect</th>
-							<th  style="width: 12.5%"data-colname="city" data-order="desc">City</th>
-							<th  style="width: 12.5%"data-colname="year" data-order="desc">Year</th>							
-							<th  style="width: 12.5%"data-colname="type" data-order="desc">type</th>
-							<th  style="width: 12.5%"data-colname="link" data-order="desc">View in Blog</th>
-						</tr>
-						<tbody id="table1">
-							
-						</tbody>
-					</table>		
-				</div>
-					<script> 
-						buildTable(ndata) 
-			
-						function infoOpen(i) {
-							  google.maps.event.trigger(gmarkers[i], 'click');
-							}
-			
-						function buildTable(data) {
-						var table = document.getElementById('table1') 
-						table.innerHTML = ''
-						for (var i=0; i < data.length; i++) { 
-							var colname = `name-${i}`
-							var colage = `age-${i}`
-							var colbirth = `birth-${i}`
-			
-							var row = 
-							`<tr> 
-							 <td>${ndata[i].name}</td>
-							 <td>${ndata[i].architect}</td> 
-							 <td>${ndata[i].city}</td>
-							 <td>${ndata[i].year}</td>							 
-							 <td>${ndata[i].type}</td>
-							 <td><a href= "${ndata[i].sitelink}"target="_blank">Click</a></td>
-							 </tr>` 
-							table.innerHTML += row 
-							} 
-						} 
-						</script>
-					</div>
+			<div class="tablebox">	
+				<table class="table table-striped">				
+					<tr  class="bg-info">
+						<th  class="bg-info" style="width: 25%"data-colname="name" data-order="desc">Name</th>
+						<th  style="width: 25%" data-colname="architect" data-order="desc">Architect</th>
+						<th  style="width: 12.5%"data-colname="city" data-order="desc">City</th>
+						<th  style="width: 12.5%"data-colname="year" data-order="desc">Year</th>							
+						<th  style="width: 12.5%"data-colname="type" data-order="desc">type</th>
+						<th  style="width: 12.5%"data-colname="link" data-order="desc">View in Blog</th>
+					</tr>
+					<tbody id="table1">
+						
+					</tbody>
+				</table>		
 			</div>
-		</div>
-
+				<script> 
+					buildTable(ndata) 
 		
-</section>
+					function infoOpen(i) {
+						  google.maps.event.trigger(gmarkers[i], 'click');
+						}
+		
+					function buildTable(data) {
+					var table = document.getElementById('table1') 
+					table.innerHTML = ''
+					for (var i=0; i < data.length; i++) { 
+						var colname = `name-${i}`
+						var colage = `age-${i}`
+						var colbirth = `birth-${i}`
+		
+						var row = 
+						`<tr> 
+						 <td>${ndata[i].name}</td>
+						 <td>${ndata[i].architect}</td> 
+						 <td>${ndata[i].city}</td>
+						 <td>${ndata[i].year}</td>							 
+						 <td>${ndata[i].type}</td>
+						 <td><a href= "${ndata[i].sitelink}"target="_blank">Click</a></td>
+						 </tr>` 
+						table.innerHTML += row 
+						} 
+					} 
+					</script>	
+			</section>
 
 		<!--kakao -->
 		<section class="section">
@@ -388,8 +331,35 @@
 				}
 			</script>
 		</section>
-	
-
+	<!--post -->
+		<section class="section" id="post-content">
+			<div class="section-heading">
+				<h6>Post</h6>								
+			</div>
+			<div class="postbox">
+					<div id="table3">
+					</div>
+					<script>
+						buildTable(postboxdata) 
+						function buildTable(podata) {
+						var table = document.getElementById('table3') 
+						table.innerHTML = ''
+						for (var i=0; i < podata.length; i++) {					
+							var row = 
+							`
+							<a href=${postboxdata[i].postlink}>
+							<div class="postcontent">							
+							<div class="posteday">${postboxdata[i].postday}</div>
+							<div class="posttitle">${postboxdata[i].posttitle}</div>
+							</div></a>
+							 ` 
+							table.innerHTML += row 
+							} 
+						} 
+						</script>
+			</div>
+				
+		</section>
 
 		<section class="section"> 
 			<h1 class="subtitle">⬇⬇ What do you want to see more in japan? I will wait for your comment ⬇⬇</h1>

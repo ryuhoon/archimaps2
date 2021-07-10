@@ -70,32 +70,20 @@ body {
 	background-color: #f8f9fa!important;
 }
 .table {
-	
 	table-layout: fixed;
 	width:100%;
   }
+  .tablebox{	
+	overflow-y:auto;
+	overflow-x:hidden;
+	padding: 6px 9px 6px 8px;
+    border-radius: 10px;
+    box-shadow: rgb(0 0 0 / 8%) 0px 3px 6px 0px;
+    border: 1px solid rgb(232, 232, 232);
+    height: 380px;
+	
+  }
   
-  .maingallery {
-    padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 80%;
-    margin: 0 auto;
-}
-.postlink {
-    text-align: justify;
-    width: 100%;
-    margin-bottom: 30px;
-    padding: 10px 10px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #35465d;
-    border-top: 1px solid #35465d;
-    border-bottom: 1px solid #35465d;
-}
 /* 맵리스트 관련*/
 
 .navigation_list{
@@ -129,6 +117,14 @@ padding:1.1% 10%;
 	margin-bottom:10px;
 	text-align: center;		
 	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.sectionpost {
+	margin-top:10px;
+	margin-bottom:10px;
+	text-align: center;		
+	width: 60%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -210,13 +206,25 @@ about
   
   #about .right-content .noticebox{	
 	overflow-y:auto;
+	overflow-x:hidden;
 	padding: 6px 9px 6px 8px;
     border-radius: 10px;
     box-shadow: rgb(0 0 0 / 8%) 0px 3px 6px 0px;
     border: 1px solid rgb(232, 232, 232);
     height: 380px;
+	
   }
-
+  #about .right-content .noticecontent {
+	position:relative;
+	padding: 20px 10px;
+	margin-top: 0.5rem;
+	text-align: left;
+	box-shadow: rgb(0 0 0 / 8%) 0px 3px 6px 0px;
+	border-width: 1px 1px 1px 4px;
+	border-style: solid;
+	border-color: rgb(232, 232, 232) rgb(232, 232, 232) rgb(232, 232, 232) #35465d;
+  }
+  
   #about .right-content .contactbox {
 	padding: 6px 9px 6px 8px;
     border-radius: 10px;
@@ -225,18 +233,42 @@ about
     text-align: center;
 	margin-top: 0.5rem;
 }
-
-  #about .right-content .noticecontent {
-	position: relative;
-	padding: 20px 10px;
-	margin-top: 0.5rem;
-	text-align: left;
-	box-shadow: rgb(0 0 0 / 8%) 0px 3px 6px 0px;
-	border-width: 1px 1px 1px 4px;
-	border-style: solid;
-	border-color: rgb(232, 232, 232) rgb(232, 232, 232) rgb(232, 232, 232) black;
+.postbox{	
+	overflow-y:auto;
+	overflow-x:hidden;
+	padding: 6px 9px 6px 8px;
+    border-radius: 10px;
+    box-shadow: rgb(0 0 0 / 8%) 0px 3px 6px 0px;
+    border: 1px solid rgb(232, 232, 232);
+    height: 380px;
+	
   }
-  
+  .postcontent{
+	text-align: justify;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0.5rem;
+    text-decoration: none;
+    color: black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  .postday{
+	  font-size: 0.6rem;
+	  color: black;
+  }
+  .posttitle{
+	font-size: 1.2rem;
+	color: #35465d;
+}
+.postheader{
+	border-bottom: 1px solid #ddd;
+}
+.postarticle {
+	font: 400 18px 'Lora', Georgia, serif;
+    line-height: 2;
+    color: #505050;
+}
  /* #about .right-content .thumb a {
 	position: absolute;
 	left: 50%;
