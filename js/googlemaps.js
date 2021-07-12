@@ -328,7 +328,9 @@ var gmarkers = [];
 								'<br>Memo : ' + '<b>' + ndata[i]['name'] + '</b>' + " by " + '<b>' + ndata[i]['architect'] + '</b>' + '</p>' +
 								 
 								'<p>' + '<b>More Detail: </b>'+ '<a href= "' + ndata[i]['sitelink'] + ' "target="_blank">'  + 'Click</a>'  +
-                '<br>' + 'Notice: ' + ndata[i]['day'] + '<br>' + '</p>'
+                '<br>' + 'Notice: ' + ndata[i]['day'] + 
+                '<br>' + 'Book info: ' + '<b>' + ndata[i]['book'] + '</b>' + ' ' + '<a href= "' + ndata[i]['booklink'] + ' "target="_blank">'  + 'Buy</a>' + '<br>'
+                + '</p>'
 
 							  +	'</div>'
 

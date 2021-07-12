@@ -363,6 +363,8 @@ var ndata = [
 	  sitelink: 'https://archi-ho-onhh.tistory.com/63',	
 		day:"update : 2021/03/10",
 		type:"building",
+    book:"新建築2020年9月号",
+    booklink:"https://amzn.to/36yCumx",
   },{
 		code:31,
 	  city:"Tokyo",
