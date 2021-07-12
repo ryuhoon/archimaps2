@@ -11,6 +11,7 @@ var ndata = [
 	  img: './img/archidata/Wind tower.jpg',
 	  day:"update : 2020/10/11",
 	  type:"building",
+    book:"新建築1987年2月号"
   },
 	{
 		code:2,
@@ -24,6 +25,9 @@ var ndata = [
 	  img: './img/archidata/Gazebo.jpg' ,
 		day:"update : 2020/10/11",
 		type:"building",
+    day: '1F,2F is remodeled by itaru／taku／COL. いづみ tea & bar+GAZEBO',
+    book:"新建築 2004年3月号",
+    booklink:"https://amzn.to/3hSIMm0",
   },
     {
 		code:3,
@@ -37,6 +41,7 @@ var ndata = [
 	  img: './img/archidata/Motomachi station.jpg' ,
 		day:"update : 2020/10/11",
 		type:"building",
+    book:"新建築 2004年3月号",
   }, 
 	{
 		code:4,
@@ -63,6 +68,7 @@ var ndata = [
 	  img: './img/archidata/Yokahama Landmark Tower.jpg' ,
 	  day:"update : 2020/10/11",
 	  type:"building",
+    book:"新建築 1993年8月号",
   }, 
 	{
 	  code:6,
@@ -76,6 +82,8 @@ var ndata = [
 	  img: './img/archidata/Koyasu Elementary School.jpg' ,
 	  day:"update : 2020/10/30",
 	  type:"building",
+    book:"新建築 2018年12月号",
+    booklink:"https://amzn.to/2VmTBFp",
   }, 
 	{
 		code:7,
@@ -89,6 +97,7 @@ var ndata = [
 	  img: './img/archidata/OsanBashi Yokohama International Passenger Terminal.jpg' ,
 		day:"update : 2020/10/30",
 		type:"building",
+    book:"新建築 2002年 06月号",
   }, 
 	{
 		code:8,
@@ -115,6 +124,8 @@ var ndata = [
 	  sitelink: 'https://archi-ho-onhh.tistory.com/31',	
 		day:"update : 2020/10/30",
 		type:"building",
+    book:"新建築 2020年9月号",
+    booklink:"https://amzn.to/3k5By0L",
   }, 
 	{
 		code:10,
@@ -153,6 +164,7 @@ var ndata = [
 	  sitelink: 'https://archi-ho-onhh.tistory.com/35',	
 		day:"update : 2020/10/30",
 		type:"building",
+   
   }, 
 	{
 		code:13,
@@ -193,7 +205,7 @@ var ndata = [
 	{
 		code:16,
     city:"Yokohama",
-      name:"Yokohama Oakwood Suites",
+      name:"The Tower Yokohama Kitanaka",
       architect:"who",
       latitude:35.451301,
 	  longitude:139.635944,
@@ -201,6 +213,8 @@ var ndata = [
 	  sitelink: 'https://archi-ho-onhh.tistory.com/40',	
 		day:"update : 2020/10/30",
 		type:"building",
+    book:"新建築 2020年8月号",
+    booklink:"https://amzn.to/3ASdRiz",
   }, {
 		code:17,
     city:"Yokohama",
@@ -225,6 +239,7 @@ var ndata = [
 	  img: './img/archidata/Minato Mirai Station.jpg' ,
 		day:"update : 2021/03/10",
 		type:"building",
+    book:"新建築 2004年1月号",
   },
 	{
 		code:19,
@@ -237,6 +252,7 @@ var ndata = [
 	  sitelink: 'https://archi-ho-onhh.tistory.com/69',	
 		day:"update : 2021/03/10",
 		type:"building",
+    book:"新建築 2004年1月号",
   },
 	{
 		code:20,
@@ -250,6 +266,8 @@ var ndata = [
 	  sitelink: 'https://archi-ho-onhh.tistory.com/5',	
 		day:"update : 2021/03/10",
 		type:"building",
+    book:"新建築 2020年7月号",
+    booklink:"https://amzn.to/2VoIFXS",
   },
 	{
 		code:21,
@@ -273,6 +291,7 @@ var ndata = [
 	  sitelink: 'https://archi-ho-onhh.tistory.com/45',	
 		day:"update : 2021/03/10",
 		type:"building",
+    book:"新建築 2003年09月号",
   },
 	{
 		code:23,
@@ -285,6 +304,7 @@ var ndata = [
 	  sitelink: 'https://archi-ho-onhh.tistory.com/46',	
 		day:"update : 2021/03/10",
 		type:"building",
+    book:"新建築 1996年10月号",
   },{
 		code:24,
 	  city:"Tokyo",
@@ -330,6 +350,8 @@ var ndata = [
 	  sitelink: 'https://archi-ho-onhh.tistory.com/51',	
 		day:"update : 2021/03/10",
 		type:"building",
+    book:"Hillside Terrace 1969-2019",
+    booklink:"https://amzn.to/2VsPZlj",
   },{
 		code:28,
 	  city:"Tokyo",
@@ -341,6 +363,8 @@ var ndata = [
 	  sitelink: 'https://archi-ho-onhh.tistory.com/52',	
 		day:"update : 2021/03/10",
 		type:"building",
+    book:"Hillside Terrace 1969-2019",
+    booklink:"https://amzn.to/2VsPZlj",
   },{
 		code:29,
 	  city:"Tokyo",
@@ -387,6 +411,8 @@ var ndata = [
 	  sitelink: '',	
 		day:"update : 2021/04/18",
 		type:"cafe",
+    book:"新建築2018年5月号/商いの空間",
+    booklink:"https://amzn.to/3e4zu5q",
   },{
 		code:33,
 	  city:"Yokohama",
@@ -398,6 +424,8 @@ var ndata = [
 	  sitelink: '',	
 		day:"update : 2021/04/18",
 		type:"building",
+    book:"新建築 2007年 07月号",
+    booklink:"",
   },{
 		code:34,
 	  city:"Yokohama",
@@ -430,6 +458,8 @@ var ndata = [
   year:"1972",
   sitelink: 'https://archi-ho-onhh.tistory.com/77',	
 	type:"building",
+  book:"中銀カプセルスタイル: 20人の物語で見る誰も知らないカプセルタワー(Nakagin Capsule Style)",
+  booklink:"https://amzn.to/3kcJZaH",
 },{
 	code:37,
   city:"Tokyo",
