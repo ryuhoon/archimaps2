@@ -329,7 +329,8 @@ var gmarkers = [];
 								 
 								'<p>' + '<b>More Detail: </b>'+ '<a href= "' + ndata[i]['sitelink'] + ' "target="_blank">'  + 'Click</a>'  +
                 '<br>' + 'Notice: ' + ndata[i]['day'] + 
-                '<br>' + 'Book info: ' + '<b>' + '[' + ndata[i]['book'] + '</b>' +']' + ' ' + '<a href= "' + ndata[i]['booklink'] + ' "target="_blank">'  + 'Buy</a>' + '<br>'
+                '<br>' + 'Book info: '
+                + '<b>' + '[ ' + ndata[i]['book'] + ' ]' + '</b>'  + '<br>'
                 + '</p>'
 
 							  +	'</div>'

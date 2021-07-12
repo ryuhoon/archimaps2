@@ -1,4 +1,8 @@
 var noticeboxdata = [
+  {
+	  noticeday:'2021/07/12',
+    noticetext:'Book info add.',
+  },
 	{
 	  noticeday:'2021/07/09',
     noticetext:'POST 추가',

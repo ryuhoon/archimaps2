@@ -26,8 +26,8 @@ var ndata = [
 		day:"update : 2020/10/11",
 		type:"building",
     day: '1F,2F is remodeled by itaru／taku／COL. いづみ tea & bar+GAZEBO',
-    book:"新建築 2004年3月号",
-    booklink:"https://amzn.to/3hSIMm0",
+    book:"<a href='https://amzn.to/3hSIMm0' target=_blank>"+"新建築 2004年3月号</a>",
+    
   },
     {
 		code:3,
@@ -111,6 +111,7 @@ var ndata = [
 	  sitelink: 'https://archi-ho-onhh.tistory.com/30',	
 		day:"update : 2020/10/30",
 		type:"building",
+    
   }, 
 	{
 		code:9,
@@ -124,8 +125,7 @@ var ndata = [
 	  sitelink: 'https://archi-ho-onhh.tistory.com/31',	
 		day:"update : 2020/10/30",
 		type:"building",
-    book:"新建築 2020年9月号",
-    booklink:"https://amzn.to/3k5By0L",
+    book:"<a href='https://amzn.to/3k5By0L' target=_blank>"+"新建築 2020年9月号</a>",
   }, 
 	{
 		code:10,
@@ -213,8 +213,7 @@ var ndata = [
 	  sitelink: 'https://archi-ho-onhh.tistory.com/40',	
 		day:"update : 2020/10/30",
 		type:"building",
-    book:"新建築 2020年8月号",
-    booklink:"https://amzn.to/3ASdRiz",
+    book:"<a href='https://amzn.to/3ASdRiz' target=_blank>"+"新建築 2020年8月号</a>",
   }, {
 		code:17,
     city:"Yokohama",
@@ -266,8 +265,7 @@ var ndata = [
 	  sitelink: 'https://archi-ho-onhh.tistory.com/5',	
 		day:"update : 2021/03/10",
 		type:"building",
-    book:"新建築 2020年7月号",
-    booklink:"https://amzn.to/2VoIFXS",
+    book:"<a href='https://amzn.to/2VoIFXS' target=_blank>"+"新建築 2020年7月号</a>",   
   },
 	{
 		code:21,
@@ -350,9 +348,8 @@ var ndata = [
 	  sitelink: 'https://archi-ho-onhh.tistory.com/51',	
 		day:"update : 2021/03/10",
 		type:"building",
-    book:"Hillside Terrace 1969-2019",
-    booklink:"https://amzn.to/2VsPZlj",
-  },{
+    book:"<a href='https://amzn.to/2VsPZlj' target=_blank>"+"Hillside Terrace 1969-2019</a>",   
+    },{
 		code:28,
 	  city:"Tokyo",
       name:"Tokyo Daikanyama Hillside Terrace2",
@@ -363,8 +360,7 @@ var ndata = [
 	  sitelink: 'https://archi-ho-onhh.tistory.com/52',	
 		day:"update : 2021/03/10",
 		type:"building",
-    book:"Hillside Terrace 1969-2019",
-    booklink:"https://amzn.to/2VsPZlj",
+    book:"<a href='https://amzn.to/2VsPZlj' target=_blank>"+"Hillside Terrace 1969-2019</a>",   
   },{
 		code:29,
 	  city:"Tokyo",
@@ -387,8 +383,7 @@ var ndata = [
 	  sitelink: 'https://archi-ho-onhh.tistory.com/63',	
 		day:"update : 2021/03/10",
 		type:"building",
-    book:"新建築2020年9月号",
-    booklink:"https://amzn.to/36yCumx",
+    book:"<a href='https://amzn.to/36yCumx' target=_blank>"+"新建築2020年9月号</a>", 
   },{
 		code:31,
 	  city:"Tokyo",
@@ -411,8 +406,7 @@ var ndata = [
 	  sitelink: '',	
 		day:"update : 2021/04/18",
 		type:"cafe",
-    book:"新建築2018年5月号/商いの空間",
-    booklink:"https://amzn.to/3e4zu5q",
+    book:"<a href='https://amzn.to/3e4zu5q' target=_blank>"+"新建築2018年5月号/商いの空間</a>", 
   },{
 		code:33,
 	  city:"Yokohama",
@@ -425,7 +419,6 @@ var ndata = [
 		day:"update : 2021/04/18",
 		type:"building",
     book:"新建築 2007年 07月号",
-    booklink:"",
   },{
 		code:34,
 	  city:"Yokohama",
@@ -458,8 +451,7 @@ var ndata = [
   year:"1972",
   sitelink: 'https://archi-ho-onhh.tistory.com/77',	
 	type:"building",
-  book:"中銀カプセルスタイル: 20人の物語で見る誰も知らないカプセルタワー(Nakagin Capsule Style)",
-  booklink:"https://amzn.to/3kcJZaH",
+  book:"<a href='https://amzn.to/3kcJZaH' target=_blank>"+"中銀カプセルスタイル: 20人の物語で見る誰も知らないカプセルタワー(Nakagin Capsule Style)</a>", 
 },{
 	code:37,
   city:"Tokyo",
