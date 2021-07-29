@@ -79,7 +79,30 @@
 	<link rel="stylesheet" type="text/css" href="./css/style.css" />
 	<!--Buymeacoffee -->
 	<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="hoonhh" data-description="Support me on Buy me a coffee!" data-message="방문해주셔서 감사합니다. 좋은 컨텐츠를 위해 커피를 후원해주세요! Thank you for visiting. Please give a lot of support to us" data-color="#FFDD00" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
+	
+	<script>
+		const all = ele => document.querySelectorAll(ele)
+		const one = ele => document.querySelector(ele)
+		const slide = _ => {
+		  const wrap = one('.slide') // .slide 선택
+		  const target = wrap.children[0] // .slide ul 선택
+		  const len = target.children.length // .slide li 갯수
+		  // .slide ul의 너비 조정
+		  target.style.cssText = `width:calc(100% * ${len});display:flex;transition:1s`
+		  // .slide li의 너비 조정
+		  Array.from(target.children)
+		  .forEach(ele => ele.style.cssText = `width:calc(100% / ${len});`)
+		  // 화면 전환 실행
+		  let pos = 0
+		  setInterval(() => {
+			pos = (pos + 1) % len // 장면 선택
+			target.style.marginLeft = `${-pos * 100}%`
+		  }, 6000) // 1500 = 1500ms = 1.5sec. 즉, 1.5초 마다 실행
+		}
+		window.onload = function () {
+		  slide()
+		}
+		</script>
 	</head>
 
 	<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false" onkeydown="return false" >
@@ -167,12 +190,17 @@
 		</nav>
 	</header>
 
-	<!----
-		<section class="section">
-			<h1 class="title">ho_on.hh's architectural maps in japan</h1>
-			<h1 class="subtitle">hello world, Are you ready to go?</h1>
-		</section>
-	-->
+	<!--
+	<section class="section">
+		<div class="slide">
+			<ul>
+			  <li><img src="./img/archidata/Gazebo.jpg" alt="" ></li>
+			  <li><img src="./img/slide_image_2.jpg" alt="" /></li>
+			  <li><img src="./img/slide_image_3.jpg" alt="" /></li>
+			  <li><img src="./img/slide_image_2.jpg" alt="" /></li>
+			</ul>
+		  </div>
+</section>-->
 
 		<!-- ***** About Area Starts ***** -->
 		<section class="section" id="about">
@@ -240,7 +268,7 @@
 		</section>
 		<!-- ***** About Area Ends ***** -->
 
-		<!--kakao -->
+		<!--kakao 
 		<section class="section">
 			<script>
 				if ( window.matchMedia( '( min-width: 728px )' ).matches == true ) {
@@ -251,8 +279,9 @@
 				}
 				
 			</script>
-		</section>
+		</section>-->
 
+		<section class="section">
 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8823252507371088"
      crossorigin="anonymous"></script>
 <!-- 아키맵 수평형1 -->
@@ -265,35 +294,9 @@
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-
+</section>
 		<!-- Google maps -->
 		<div id="map"></div>
-
-	
-		<!--kakao -->
-		<section class="section" style="margin-top: 1rem;">
-			<script>
-				if ( window.matchMedia( '( min-width: 728px )' ).matches == true ) {
-					document.write( '<ins class="kakao_ad_area" style="display:none;" data-ad-unit = "DAN-2cLxXGkU6EOyKqmK"  data-ad-width = "728" data-ad-height = "90"></ins><script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async><\/script>' );
-				}
-				if ( window.matchMedia( '( max-width: 727px )' ).matches == true ) {
-					document.write( '<ins class="kakao_ad_area" style="display:none;" data-ad-unit = "DAN-e6IhFjmuatV7jf2g" data-ad-width = "320" data-ad-height = "100"></ins><script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async><\/script>' );
-				}
-			</script>
-		</section>
-
-		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8823252507371088"
-     crossorigin="anonymous"></script>
-<!-- 아키맵 수평형2 -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-8823252507371088"
-     data-ad-slot="1495112863"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 
 	<section class="section" id="maplist">
 		<div class="section-heading">
@@ -345,7 +348,7 @@
 					</script>	
 			</section>
 
-		<!--kakao -->
+		<!--kakao 
 		<section class="section">
 			<script>
 				if ( window.matchMedia( '( min-width: 728px )' ).matches == true ) {
@@ -355,8 +358,9 @@
 					document.write( '<ins class="kakao_ad_area" style="display:none;" data-ad-unit = "DAN-geR9Uvurt0XufSHJ" data-ad-width = "320" data-ad-height = "100"></ins><script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async><\/script>' );
 				}
 			</script>
-		</section>
+		</section>-->
 
+		<section class="section">
 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8823252507371088"
      crossorigin="anonymous"></script>
 <!-- 아키맵 수평형3 -->
@@ -369,6 +373,7 @@
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+</section>
 
 	<!--post -->
 		<section class="section" id="post-content">
@@ -399,6 +404,33 @@
 			</div>	
 		</section>
 		
+		<!--kakao 
+		<section class="section" style="margin-top: 1rem;">
+			<script>
+				if ( window.matchMedia( '( min-width: 728px )' ).matches == true ) {
+					document.write( '<ins class="kakao_ad_area" style="display:none;" data-ad-unit = "DAN-2cLxXGkU6EOyKqmK"  data-ad-width = "728" data-ad-height = "90"></ins><script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async><\/script>' );
+				}
+				if ( window.matchMedia( '( max-width: 727px )' ).matches == true ) {
+					document.write( '<ins class="kakao_ad_area" style="display:none;" data-ad-unit = "DAN-e6IhFjmuatV7jf2g" data-ad-width = "320" data-ad-height = "100"></ins><script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async><\/script>' );
+				}
+			</script>
+		</section>-->
+
+		<section class="section" style="margin-top: 1rem;">
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8823252507371088"
+		 crossorigin="anonymous"></script>
+	<!-- 아키맵 수평형2 -->
+	<ins class="adsbygoogle"
+		 style="display:block"
+		 data-ad-client="ca-pub-8823252507371088"
+		 data-ad-slot="1495112863"
+		 data-ad-format="auto"
+		 data-full-width-responsive="true"></ins>
+	<script>
+		 (adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+	</section>
+
 		<section class="section"> 
 			<h1 class="subtitle">⬇⬇ What do you want to see more in japan? I will wait for your comment ⬇⬇</h1>
 			

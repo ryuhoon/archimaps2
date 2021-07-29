@@ -149,8 +149,29 @@ padding:1.1% 10%;
     padding-bottom: 5px;
 
 }
-
-
+*{margin:0 auto; padding:0;}
+  ul,li{list-style:none;}
+  .slide{
+	height:10rem;
+	overflow:hidden;
+	margin:0 auto;
+    }
+  .slide ul{
+	width:100%;
+	height:auto;
+	}
+  .slide li img{
+	width:100%;
+	height: auto;
+	object-fit:cover;
+	margin-top: 0px auto;
+	margin-bottom: 0px auto;
+}
+  .slide li:nth-child(1){background:#faa;}
+  .slide li:nth-child(2){background:#afa;}
+  .slide li:nth-child(3){background:#aaf;}
+  .slide li:nth-child(4){background:#faf;}
+  
 /*
 ---------------------------------------------
 about
