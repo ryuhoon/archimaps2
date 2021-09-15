@@ -26,7 +26,7 @@ var ndata = [
 		day:"update : 2020/10/11",
 		type:"building",
     day: '1F,2F is remodeled by itaru／taku／COL. いづみ tea & bar+GAZEBO',
-    book:"<a href='https://amzn.to/3hSIMm0' target=_blank>"+"新建築 2004年3月号</a>",
+    book:"<a href='https://amzn.to/3hSIMm0' target=_blank>"+"新建築 2018年11月号</a>",
     
   },
     {
