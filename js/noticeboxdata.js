@@ -1,5 +1,9 @@
 var noticeboxdata = [
   {
+	  noticeday:'2022/01/10',
+    noticetext:'Osaka data update.',
+  },
+  {
 	  noticeday:'2021/09/04',
     noticetext:'Tokyo data update.',
   },

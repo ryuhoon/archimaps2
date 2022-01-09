@@ -200,11 +200,12 @@ stylers: [
 								mapTypeControl: false,
                 streetViewControl:false,
 								center: 
-								{ lat: 35.465746, lng: 139.622092}
+								{ lat: 35.658450658166664, lng: 139.7007586504356}
 								
 							} );
-		const tokyomap = {lat : 35.658450658166664, lng:139.7007586504356}
+		const tokyomap = {lat: 35.658450658166664, lng: 139.7007586504356}
 		const yokohamamap = {lat: 35.465746, lng: 139.622092}
+    const osakamap = {lat:34.70250564177157, lng: 135.4957192391982}
 
     //icon
    
@@ -265,7 +266,7 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
   controlUI.style.borderRadius = "3px";
   controlUI.style.boxShadow = "0 2px 6px rgba(0,0,0,.3)";
   controlUI.style.cursor = "pointer";
-  controlUI.style.marginBottom = "22px";
+  controlUI.style.marginBottom = "6px";
   controlUI.style.textAlign = "center";
   controlUI.style.width = "6rem";
   controlUI.style.height = "2rem";	
@@ -287,6 +288,36 @@ function yokohamamapControl(yokohamamapcontrolDiv, map) {
 	   map.setZoom(12);
   });
 }				
+function osakamapControl(osakamapcontrolDiv, map) {
+  // Set CSS for the control border.
+  const controlUI = document.createElement("div");
+  controlUI.style.backgroundColor = "#fff";
+  controlUI.style.border = "2px solid #fff";
+  controlUI.style.borderRadius = "3px";
+  controlUI.style.boxShadow = "0 2px 6px rgba(0,0,0,.3)";
+  controlUI.style.cursor = "pointer";
+  controlUI.style.marginBottom = "6px";
+  controlUI.style.textAlign = "center";
+  controlUI.style.width = "6rem";
+  controlUI.style.height = "2rem";	
+  controlUI.title = "Click to recenter the Osaka map";
+  osakamapcontrolDiv.appendChild(controlUI);
+  // Set CSS for the control interior.
+  const controlText = document.createElement("div");
+  controlText.style.color = "rgb(25,25,25)";
+  controlText.style.fontFamily = "Roboto,Arial,sans-serif";
+  controlText.style.fontSize = "1rem";
+  controlText.style.lineHeight = "1.8rem";
+  controlText.style.paddingLeft = "0px";
+  controlText.style.paddingRight = "0px";
+  controlText.innerHTML = "Osaka";
+  controlUI.appendChild(controlText);
+  // Setup the click event listeners: simply set the map to Chicago.
+  controlUI.addEventListener("click", () => {
+    map.setCenter(osakamap);
+	   map.setZoom(12);
+  });
+}	
 	
 
 
@@ -379,7 +410,11 @@ var gmarkers = [];
   const yokohamamapControlDiv = document.createElement("div");
   yokohamamapControl(tokyomapControlDiv, map);
   map.controls[google.maps.ControlPosition.TOP_LEFT].push(yokohamamapControlDiv);
-
+// Create the DIV to hold the control and call the CenterControl()
+  // constructor passing in this DIV.
+  const osakamapControlDiv = document.createElement("div");
+  osakamapControl(tokyomapControlDiv, map);
+  map.controls[google.maps.ControlPosition.TOP_LEFT].push(osakaamapControlDiv);
 
 
 }
