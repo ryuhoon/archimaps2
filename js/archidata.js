@@ -148,6 +148,7 @@ var ndata = [
       latitude:35.457003,
 	  longitude:139.634713,
       year:1997,
+      img: './img/archidata/Queens square Yokohama.jpg' ,
 	  sitelink: 'https://archi-ho-onhh.tistory.com/34',	
 		day:"update : 2020/10/30",
 		type:"building",
