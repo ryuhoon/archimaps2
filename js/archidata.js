@@ -300,7 +300,6 @@ var ndata = [
       latitude:35.626528, 
 	  longitude:139.774115,
       year:"1997",
-      img: './img/archidata/UNIQLO PARK.jpg' ,
 	  sitelink: 'https://archi-ho-onhh.tistory.com/46',	
 		day:"update : 2021/03/10",
 		type:"building",
