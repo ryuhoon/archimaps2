@@ -27,10 +27,7 @@ var noticeboxdata = [
 	  noticeday:'2021/06/29',
     noticetext:'도쿄, 요코하마 카페 추가됨 <br>name:"Blue Bottle Coffee Minato Mirai Cafe" <br>도쿄 화장실 프로젝트 추가됨. TOKYO Toilet Project',
   },
-  {
-	  noticeday:'2023/06/29',
-    noticetext:'도쿄',
-  },
+  
   
 	
     ];
